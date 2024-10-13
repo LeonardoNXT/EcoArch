@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -527,7 +529,7 @@ main {
     }
     #slide {
         flex-direction: column-reverse;
-        height: 90%;
+        height: calc(90% - 100px);
     }
     #slide-1 {
         flex-direction: column-reverse;
