@@ -34,6 +34,36 @@ main {
     color: #ffffff;
     font-size: 24.6px;
 }
+#links-config-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: absolute;
+    top: 70%;
+    
+}
+#buttons-box {
+    background-color: #4254411f;
+    backdrop-filter: blur(10px);
+    width: 220px;
+    height: 60px;
+    border-radius: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+}
+#btn-title {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 0;
+   
+    border-radius: 30px;
+    transition: 0.3s all;
+}
 #firsh-slide {
     width: 100%;
     height: calc(100vh + 60px);
@@ -403,6 +433,10 @@ main {
     #slides {
         height: 500px;
     }
+    #buttons-box {
+        width: 180px;
+        height: 50px;
+    }
     .slider {
         width: 400px;
         height: 400px;
@@ -438,7 +472,10 @@ main {
     #introduction p {
         font-size: 80px;
     }
-
+    #buttons-box {
+        width: 180px;
+        height: 50px;
+    }
     #image-config {
         width: 300px;
         height: 300px;
@@ -485,6 +522,9 @@ main {
 
 }
 @media (max-width: 1024px) {
+    #introduction p {
+        font-size: 50px;
+    }
     #slide {
         flex-direction: column-reverse;
         height: 90%;
@@ -526,7 +566,7 @@ main {
 /* Para telas menores que 768px (tablets e smartphones grandes) */
 @media (max-width: 768px) {
     #introduction p {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     #image-config {
@@ -557,6 +597,11 @@ main {
     #title-box {
         width: 90%;
         font-size: 20px;
+    }
+    #links-config-box {
+        flex-direction: column;
+        gap: 20px;
+        top: 62%;
     }
 
     #btn-box {
@@ -590,7 +635,7 @@ main {
 }
 @media (max-width: 480px) {
     #introduction p {
-        font-size: 30px;
+        font-size: 37px;
     }
     #config-text p:nth-child(2) {
         font-size: 16px;
@@ -652,6 +697,9 @@ main {
     }
 }
 @media (max-width: 390px) {
+    #introduction p {
+        font-size: 30px;
+    }
     #slide {
         width: 90%;
     }
