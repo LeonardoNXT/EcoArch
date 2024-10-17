@@ -65,6 +65,12 @@ main {
     align-items: center;
     transition: 0.3s all;
 }
+#buttons-box:hover {
+    background-color: #ffffff;
+    #btn-title {
+        color: #333;
+    }
+}
 
 #btn-title {
     text-decoration: none;
@@ -1607,6 +1613,12 @@ main {
         width: 220px;
         height: 220px;
     }
-
+    #buttons-box {
+        width: 120px;
+        height: 35px;
+    }
+    #btn-title {
+        font-size: 12px;
+    }
 
 }

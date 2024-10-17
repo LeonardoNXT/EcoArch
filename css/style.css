@@ -73,10 +73,16 @@ body{
     align-items: center;
     transition: 0.3s all;
 }
+#buttons-box:hover {
+    background-color: #ffffff;
+    #btn-title {
+        color: #333;
+    }
+}
 #btn-title {
     text-decoration: none;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 18px;
     padding: 0;
    
     border-radius: 30px;
