@@ -135,11 +135,70 @@
 
                 </div>
                 <div id="part-two">
-                    <img src="./CSS/Img/rosewood.png" id="image-config" alt="">
+                    <img src="./CSS/Img/bullitt.jpg" id="image-config" alt="">
                 </div>
             </div>
         </section>
+        <section id="sixth-slide">
+            <div id="the-line-box">
+                <p id="the-line-title">The Line</p>
+                <div id="btn-box-2" onclick="openTheLine()">Saiba mais</div>
+            </div>
+        </section>
+        <section id="seventh-slide">
+            <div id="video-box">
+                <video src="./CSS/Video/videoplayback.mp4" id="video" autoplay loop></video>
+            </div>
+        </section>
+        <section id="eighth-slide">
+            <div id="slides-3">
+                <div id="config-button">
+                    <div id="btn-slide-3" onclick="openModal2()">Saiba mais</div>
+                </div>
 
+                <div id="config-slides-3">
+                    <p id="text-slide-3">Design Inovador e Ecológico</p>
+                </div>
+            </div>
+            <div id="slides-3">
+                <div id="config-button">
+                    <div id="btn-slide-3" onclick="openModal3()">Saiba mais</div>
+                </div>
+                <div id="config-slides-3">
+                    <p id="text-slide-3">Impacto Ambiental Zero</p>
+                </div>
+
+            </div>
+            <div id="slides-3">
+                <div id="config-button">
+                    <div id="btn-slide-3" onclick="openModal4()">Saiba mais</div>
+                </div>
+                <div id="config-slides-3">
+                    <p id="text-slide-3">Tecnologia de Transporte Rápido</p>
+                </div>
+
+            </div>
+        </section>
+        <section id="ninth-slide">
+            <div id="slide-nine">
+                <div id="part-one-nine">
+                    <div id="config-text-slide">
+                        <p>Impacto Ambiental: O Poder
+                            da Eficiência Energética
+                        </p>
+                        <p>Edifícios inteligentes usam automação e sensores para otimizar energia e recursos, ajustando
+                            iluminação e climatização de forma eficiente. Com fontes renováveis e gestão sustentável da
+                            água, reduzem a pegada de carbono e melhoram o conforto, contribuindo para a preservação
+                            ambiental.
+                        </p>
+                    </div>
+                    <div href="" id="btn-box" onclick="openModal5()" >Saiba mais</div>
+                </div>
+                <div id="part-two">
+                    <img src="./CSS/Img/line2.png" id="image-config" alt="">
+                </div>
+            </div>
+        </section>
     </main>
     <div class="janela-modal" id="janela-modal">
         <div class="modal">
@@ -147,15 +206,96 @@
             <div id="part-one-modal">
                 <div>
                     <p id="Title-modal">Um Edifício Autossuficiente</p>
-                    <p id="text-modal">Imagine um edifício que coleta sua própria água da chuva, gera sua própria energia através de
+                    <p id="text-modal">Imagine um edifício que coleta sua própria água da chuva, gera sua própria
+                        energia através de
                         painéis solares, e ajusta automaticamente o consumo de luz e ar-condicionado para economizar
                         energia. Isso já é realidade em diversos prédios inteligentes ao redor do mundo, como o edifício
                         "Bullitt Center" em Seattle, que é considerado um dos prédios mais sustentáveis do planeta.</p>
                 </div>
 
+
             </div>
+
             <div id="part-two-modal">
                 <img src="./CSS/Img/bullitt.jpg" id="image-config-modal" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="janela-modal-1" id="janela-modal-1">
+        <div class="modal-2">
+            <div id="exit-btn-1">x</div>
+            <div id="part-one-modal-2">
+                <div>
+                    <p id="Title-modal">Design Inovador e Ecológico</p>
+                    <p id="text-modal">The Line é uma cidade futurista planejada para ter 170 km de comprimento, 200
+                        metros de largura e 500 metros de altura, mas sem ruas ou carros. A proposta é que todos os
+                        serviços essenciais estejam a uma caminhada de 5 minutos, e a cidade será movida por 100% de
+                        energia renovável.</p>
+                </div>
+
+
+            </div>
+
+            <div id="part-two-modal-2">
+                <img src="./CSS/Img/TheLine2.png" id="image-config-modal" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="janela-modal-2" id="janela-modal-2">
+        <div class="modal-3">
+            <div id="exit-btn-1">x</div>
+            <div id="part-two-modal-3">
+                <img src="./CSS/Img/TheLine3.png" id="image-config-modal" alt="">
+            </div>
+            <div id="part-one-modal-2">
+                <div>
+                    <p id="Title-modal">Impacto Ambiental Zero</p>
+                    <p id="text-modal">The Line foi projetada para ter zero emissões de carbono. Ao invés de expandir
+                        horizontalmente, como as cidades tradicionais, a cidade será vertical e compacta, o que reduz a
+                        ocupação do solo e preserva 95% da natureza ao seu redor.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="janela-modal-3" id="janela-modal-3">
+        <div class="modal-2">
+            <div id="exit-btn-1">x</div>
+            <div id="part-one-modal-2">
+                <div>
+                    <p id="Title-modal">Tecnologia de Transporte Rápido</p>
+                    <p id="text-modal">A cidade contará com um sistema de transporte de alta velocidade que permitirá
+                        que os residentes percorram os 170 km de ponta a ponta em apenas 20 minutos, o que elimina a
+                        necessidade de veículos tradicionais e reduz drasticamente o tempo de deslocamento.</p>
+                </div>
+
+
+            </div>
+
+            <div id="part-two-modal-4">
+                <img src="./CSS/Img/TheLine4.png" id="image-config-modal" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="janela-modal-4" id="janela-modal-4">
+        <div class="modal">
+            <div id="exit-btn-1">x</div>
+            <div id="part-one-modal-3">
+                <div>
+                    <p id="Title-modal">Impacto Ambiental: O Poder da Eficiência Energética</p>
+                    <p id="text-modal">Edifícios inteligentes reduzem o impacto ambiental ao otimizar o uso de energia e
+                        água através de tecnologias como automação e sensores. Eles ajustam iluminação e climatização de
+                        acordo com a ocupação, utilizam fontes de energia renovável e reaproveitam recursos, como a água
+                        da chuva. Essas soluções aumentam a eficiência, diminuem a pegada de carbono e contribuem para a
+                        sustentabilidade..</p>
+                </div>
+
+
+            </div>
+
+            <div id="part-two-modal">
+                <img src="./CSS/Img/line2.png" id="image-config-modal" alt="">
             </div>
         </div>
     </div>

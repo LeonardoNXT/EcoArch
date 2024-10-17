@@ -23,3 +23,59 @@ function openModal() {
     })
 
 }
+
+function openModal2() {
+    const modal = document.getElementById("janela-modal-1");
+    modal.classList.add("abrir")
+
+    modal.addEventListener("click", (event) => {
+        if(event.target.id == "exit-btn-1" || event.target.id == "janela-modal-1"){
+            modal.classList.remove("abrir")
+        }
+    })
+
+}
+
+function openModal3() { 
+    const modal = document.getElementById("janela-modal-2");
+    modal.classList.add("abrir")
+
+    modal.addEventListener("click", (event) => {
+        if(event.target.id == "exit-btn-1" || event.target.id == "janela-modal-2"){
+            modal.classList.remove("abrir")
+        }
+    })
+
+}
+function openModal4() {
+    const modal = document.getElementById("janela-modal-3");
+    modal.classList.add("abrir")
+
+    modal.addEventListener("click", (event) => {
+        if(event.target.id == "exit-btn-1" || event.target.id == "janela-modal-3"){
+            modal.classList.remove("abrir")
+        }
+    })
+
+}
+function openModal5() {
+    const modal = document.getElementById("janela-modal-4");
+    modal.classList.add("abrir")
+
+    modal.addEventListener("click", (event) => {
+        if(event.target.id == "exit-btn-1" || event.target.id == "janela-modal-4"){
+            modal.classList.remove("abrir")
+        }
+    })
+
+}
+function openTheLine() {
+    const slide1 = document.querySelector("#seventh-slide")
+    const slide2 = document.querySelector("#eighth-slide")
+    slide1.style.display = "flex"
+    slide1.style.animation = "modal1 0.5s"
+
+    slide2.style.display = "grid"
+    slide2.style.animation = "modal1 0.5s"
+    
+}
