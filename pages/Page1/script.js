@@ -83,3 +83,20 @@ function openTheLine() {
     slide3.style.borderTopLeftRadius = "0px"
     
 }
+function openSennaTower() {
+    const slide4 = document.querySelector("#eleventh-slide")
+    const video = document.querySelector("#video-2")
+    slide4.style.display = "block"
+    video.style.animation = "modal1 0.5s"
+
+    
+}
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('video-2');
+    if (video) {
+      video.muted = true; // Silenciar o vídeo para permitir reprodução automática
+      video.play().catch(error => {
+        console.error('Reprodução automática falhou:', error);
+      });
+    }
+  });
