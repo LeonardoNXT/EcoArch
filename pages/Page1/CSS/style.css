@@ -776,11 +776,11 @@ main {
     height: 100vh;
     position: relative;
     top: -250px;
-    background-color: #ffffff;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(19,69,78,1) 100%);
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
     overflow: hidden;
-    background-image: url(./Img/Eighth-slide.png);
     display: none;
     justify-content: center;
     align-items: center;
@@ -865,23 +865,96 @@ main {
     height: 100vh;
     position: relative;
     top: -250px;
-    background-color: #ffffff;
+    background: rgb(19,69,78);
+    background: linear-gradient(180deg, rgba(19,69,78,1) 0%, rgba(0,0,0,1) 100%);
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
     overflow: hidden;
-    background-image: url(./Img/Ninth-slide.png);
     display: flex;
     justify-content: center;
     align-items: center;
     place-items: CENTER;
     transition: 1s all;
 }
-
 #ninth-slide p:nth-child(2) {
     font-size: 23px;
 }
-
-
+#tenth-slide {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: -250px;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: end; 
+    transition: 1s all;
+}
+#senna-tower-slide {
+    width: 100%;
+    height: 70%;
+    background-image: url(./Img/nineth.png);
+    background-size: cover;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 1s all;
+}
+#img-senna-tower {
+    height: 900px;
+    position: absolute;
+    right: 200px;
+    top: -200px;
+}
+#img-logo-fg {
+    position: relative;
+    top: -100px;
+    filter: grayscale(100%);
+}
+#eleventh-slide {
+    width: 100%;
+    position: relative;
+    top: -290px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    z-index: 4;
+    background-color: #152400;
+}
+#background-2 {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    left: 0;
+    z-index: -1;
+    animation: modal1 1s;
+}
+#eleventh-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(2, 2, 2), rgba(243, 243, 50, 0));
+}
+#video-2 {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    object-fit: cover;
+}
 
 @keyframes modal {
     from {
@@ -1275,6 +1348,18 @@ main {
 }
 
 @media (max-width: 480px) {
+    #img-senna-tower {
+        height: 900px;
+        position: absolute;
+        right: 38%;
+        top: -200px;
+    }
+    #img-logo-fg {
+        position: relative;
+        top: -100px;
+        width: 80%;
+        filter: grayscale(100%);
+    }
     #introduction p {
         font-size: 37px;
     }

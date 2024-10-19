@@ -72,10 +72,14 @@ function openModal5() {
 function openTheLine() {
     const slide1 = document.querySelector("#seventh-slide")
     const slide2 = document.querySelector("#eighth-slide")
+    const slide3 = document.querySelector("#ninth-slide")
     slide1.style.display = "flex"
     slide1.style.animation = "modal1 0.5s"
 
     slide2.style.display = "grid"
     slide2.style.animation = "modal1 0.5s"
+
+    slide3.style.borderTopRightRadius = "0px"
+    slide3.style.borderTopLeftRadius = "0px"
     
 }
