@@ -85,18 +85,35 @@ function openTheLine() {
 }
 function openSennaTower() {
     const slide4 = document.querySelector("#eleventh-slide")
+    const slide5 = document.querySelector("#twelfth-slide")
     const video = document.querySelector("#video-2")
+    slide5.style.display = "flex"
     slide4.style.display = "block"
     video.style.animation = "modal1 0.5s"
 
     
 }
 document.addEventListener('DOMContentLoaded', function() {
+    const video2 = document.getElementById('video-3');
     const video = document.getElementById('video-2');
+    const video1 = document.getElementById('video');
     if (video) {
       video.muted = true; // Silenciar o vídeo para permitir reprodução automática
       video.play().catch(error => {
         console.error('Reprodução automática falhou:', error);
       });
     }
+    if (video1) {
+      video1.muted = true; // Silenciar o método para permitir reprodução automática
+      video1.play().catch(error => {
+        console.error('Reprodução automática falhou:', error);
+      });
+    }
+    if (video2) {
+      video2.muted = true; // Silenciar o método para permitir reprodução automática
+      video2.play().catch(error => {
+        console.error('Reprodução automática falhou:', error);
+      });
+    }
   });
+  

@@ -895,15 +895,20 @@ main {
 #senna-tower-slide {
     width: 100%;
     height: 70%;
-    background-image: url(./Img/nineth.png);
     background-size: cover;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     transition: 1s all;
+}
+#nineth-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-bottom-right-radius: 40px;
+    border-Bottom-left-radius: 40px;
+    transform: rotate(180deg);
 }
 #img-senna-tower {
     height: 900px;
@@ -918,6 +923,7 @@ main {
 }
 #eleventh-slide {
     width: 100%;
+    height: 100vh;
     position: relative;
     top: -290px;
     border-top-left-radius: 40px;
@@ -935,6 +941,59 @@ main {
     object-fit: cover;
     position: absolute;
     object-fit: cover;
+}
+#twelfth-slide {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: -290px;
+    z-index: 4;
+    background-image: url(./Img/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+    display: none;
+    justify-content: end;
+    align-items: center;
+}
+#video-3 {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    object-fit: cover;
+}
+#part-of-div {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+#title-of-div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#title-of-div p {
+    font-size: 126px;
+    color: #f1a45d;
+}
+#title-of-div span {
+    font-size: 42.6px;
+    color: #6e443c;
+}
+#text-of-div {
+    max-width: 657px;
+}
+#text-of-div p {
+    font-size: 24.6px;
+    color: #ffffff;
+    text-align: justify;
+
 }
 
 @keyframes modal {
@@ -1027,6 +1086,12 @@ main {
     #text-modal {
         font-size: 16px;
     }
+    #part-of-div {
+        width: 70%;
+    }
+    #twelfth-slide {
+        height: 50vh;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1111,7 +1176,12 @@ main {
     #slides-3 {
         height: 541px;
     }
-
+    #video-3 {
+        display: none;
+    }
+    #part-of-div {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -1222,6 +1292,9 @@ main {
     #introduction p {
         font-size: 40px;
     }
+    #all-content-of-div {
+        padding: 20px;
+    }
 
     #the-line-box {
         width: 75%;
@@ -1306,6 +1379,15 @@ main {
     #introduction {
         background-position: center;
     }
+    #title-of-div p {
+        font-size: 100px;
+    }
+    #title-of-div span {
+        font-size: 32px;
+    }
+    #text-of-div p {
+        font-size: 20px;
+    }
 
     #the-line-title {
         font-size: 80px;
@@ -1341,8 +1423,20 @@ main {
         width: 80%;
         filter: grayscale(100%);
     }
+    #all-content-of-div {
+        padding: 40px;
+    }
     #introduction p {
         font-size: 37px;
+    }
+    #title-of-div p {
+        font-size: 80px;
+    }
+    #title-of-div span {
+        font-size: 22px;
+    }
+    #text-of-div p {
+        font-size: 18px;
     }
 
     #slide-nine {
@@ -1509,6 +1603,18 @@ main {
         width: 200px;
         height: 200px;
         border-radius: 80px;
+    }
+    #introduction p {
+        font-size: 37px;
+    }
+    #title-of-div p {
+        font-size: 60px;
+    }
+    #title-of-div span {
+        font-size: 20px;
+    }
+    #text-of-div p {
+        font-size: 16px;
     }
 
     #text-slide-3 {
