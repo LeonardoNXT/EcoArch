@@ -565,6 +565,21 @@ main {
     opacity: 0;
     transition: 1s;
 }
+.janela-modal-5 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+}
 
 .janela-modal.abrir {
     display: flex;
@@ -588,6 +603,11 @@ main {
 
 .janela-modal-4.abrir {
     display: flex;
+    opacity: 1;
+}
+.janela-modal-5.abrir {
+    display: flex;
+    animation: modal 1s none;
     opacity: 1;
 }
 
@@ -664,6 +684,16 @@ main {
 }
 
 #exit-btn-1 {
+    position: absolute;
+    top: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #f3f3f3;
+}
+#exit-btn-2 {
     position: absolute;
     top: 20px;
     padding: 10px 20px;
@@ -919,34 +949,107 @@ main {
 #img-logo-fg {
     position: relative;
     top: -100px;
+    width: 450px;
+    filter: grayscale(100%);
+}
+#img-logo-fg-2 {
+    position: relative;
+    top: 0;
+    width: 500px;
     filter: grayscale(100%);
 }
 #eleventh-slide {
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     position: relative;
-    top: -290px;
+    top: -250px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    z-index: 4;
+    z-index: -998;
     background-color: #152400;
     display: none;
     transition: 0.5s all;
+    overflow: hidden;
 }
 #video-2 {
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     object-fit: cover;
 }
+#complement-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#config-video-svg {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#video-senna-config {
+    width: 70%;
+    position: relative;
+    z-index: 1;
+    
+}
+#video-senna {
+    width: 100%;
+    object-fit: cover;
+    position: static;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+#init-video {
+    width: 20px;
+}
+#config-area-btn {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+#btn-video-config {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s all;
+    background-color: #ffffff;
+}
+#btn-video-config:hover {
+    background-color: rgb(182, 17, 17);
+}
+#config-btn-and-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
 #twelfth-slide {
     width: 100%;
     height: 100vh;
     position: relative;
-    top: -290px;
+    top: -250px;
     z-index: 4;
     background-image: url(./Img/footer.jpg);
     background-size: cover;
@@ -981,10 +1084,16 @@ main {
 #title-of-div p {
     font-size: 126px;
     color: #f1a45d;
+    background: linear-gradient(45deg, #f1a45d, #dbbd85, #FF8C00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #title-of-div span {
     font-size: 42.6px;
     color: #6e443c;
+    background: linear-gradient(45deg, #fc6610, #dbbd85, #161101);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #text-of-div {
     max-width: 657px;
@@ -994,6 +1103,9 @@ main {
     color: #ffffff;
     text-align: justify;
 
+}
+#video-da-janela {
+    width: 60%;
 }
 
 @keyframes modal {
@@ -1379,6 +1491,9 @@ main {
     #introduction {
         background-position: center;
     }
+    #video-da-janela {
+        width: 92%;
+    }
     #title-of-div p {
         font-size: 100px;
     }
@@ -1388,9 +1503,31 @@ main {
     #text-of-div p {
         font-size: 20px;
     }
+    #config-video-svg {
+        height: 100vh;
+    }
 
     #the-line-title {
         font-size: 80px;
+    }
+    #eleventh-slide {
+        height: 140vh;
+    }
+    #complement-page {
+        height: 30vh;
+    }
+    #config-btn-and-p {
+        padding: 30px;
+    }
+    #btn-video-config {
+        width: 50px;
+        height: 50px;
+    }
+    #img-logo-fg-2{
+        width: 80%;
+    }
+    #video-senna-config {
+        width: 90%;
     }
 
     #slide {

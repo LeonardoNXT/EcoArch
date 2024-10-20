@@ -69,6 +69,20 @@ function openModal5() {
     })
 
 }
+function openModal6() {
+    const modal = document.getElementById("janela-modal-5");
+    const video = document.querySelector("#video-da-janela");
+    modal.classList.add("abrir")
+    video.play();
+
+    modal.addEventListener("click", (event) => {
+        if(event.target.id == "exit-btn-1" || event.target.id == "janela-modal-5"){
+            modal.classList.remove("abrir")
+            video.pause();
+            video.currentTime = 0;
+        }
+    })
+}
 function openTheLine() {
     const slide1 = document.querySelector("#seventh-slide")
     const slide2 = document.querySelector("#eighth-slide")
