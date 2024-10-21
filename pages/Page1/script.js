@@ -7,8 +7,8 @@ setInterval(function() {
 
 function nextImage() {
     count++;
-    if (count > 3) {  // Verifica o limite de 3, já que há 3 imagens
-        count = 1;    // Se for maior que 3, volta para 1
+    if (count > 3) { 
+        count = 1;   
     }
     document.getElementById("radio" + count).checked = true;
 }
@@ -100,9 +100,13 @@ function openTheLine() {
 function openSennaTower() {
     const slide4 = document.querySelector("#eleventh-slide")
     const slide5 = document.querySelector("#twelfth-slide")
+    const slide6 = document.querySelector("#thirteenth-slide")
+    const slide7 = document.querySelector("#fourthenth-slide")
     const video = document.querySelector("#video-2")
     slide5.style.display = "flex"
     slide4.style.display = "block"
+    slide7.style.display = "flex"
+    slide6.style.display = "flex"
     video.style.animation = "modal1 0.5s"
 
     
@@ -112,22 +116,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const video = document.getElementById('video-2');
     const video1 = document.getElementById('video');
     if (video) {
-      video.muted = true; // Silenciar o vídeo para permitir reprodução automática
+      video.muted = true; 
       video.play().catch(error => {
         console.error('Reprodução automática falhou:', error);
       });
     }
     if (video1) {
-      video1.muted = true; // Silenciar o método para permitir reprodução automática
+      video1.muted = true; 
       video1.play().catch(error => {
         console.error('Reprodução automática falhou:', error);
       });
     }
     if (video2) {
-      video2.muted = true; // Silenciar o método para permitir reprodução automática
+      video2.muted = true;
       video2.play().catch(error => {
         console.error('Reprodução automática falhou:', error);
       });
     }
   });
-  
+  const section = document.querySelector("#thirteenth-slide")
+
