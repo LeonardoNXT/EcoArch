@@ -963,12 +963,17 @@ main {
     border-bottom-right-radius: 40px;
     border-Bottom-left-radius: 40px;
     transform: rotate(180deg);
+    transition: 0.5s all;
 }
 #img-senna-tower {
     height: 900px;
     position: absolute;
     right: 200px;
     top: -200px;
+    transition: 0.5s all;
+}
+#config-svg {
+    width: 20px;
 }
 #img-logo-fg {
     position: relative;
@@ -1076,7 +1081,7 @@ main {
     z-index: -999;
     top: -290px;
     z-index: 4;
-    background-image: url(./Img/footer.jpg);
+    background-image: url(./Img/sennatower-avif.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1084,6 +1089,16 @@ main {
     display: none;
     justify-content: end;
     align-items: center;
+}
+#twelfth-slide::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(243, 243, 50, 0));
+    z-index: 1;
 }
 #video-3 {
     width: 100%;
@@ -1246,6 +1261,33 @@ main {
     left: 25%;
     top: 0;
 }
+#line-2 {
+    width: 1px;
+    height: 20%;
+    background-color: #d3b978;
+    position: absolute;
+    z-index: 4;
+    right: 25%;
+    bottom: 0;
+}
+#line-3 {
+    width: 1px;
+    height: 20%;
+    background-color: #d3b978;
+    position: absolute;
+    z-index: 6;
+    right: 25%;
+    top: 0;
+}
+#line-4 {
+    width: 1px;
+    height: 20%;
+    background-color: #d3b978;
+    position: absolute;
+    z-index: 4;
+    left: 25%;
+    bottom: 0;
+}
 
 #fourthenth-slide {
     width: 100%;
@@ -1277,7 +1319,70 @@ main {
     border-radius: 40px;
 
 }
-
+#out-last-slide {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    top: -290px;
+    z-index: 4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%);
+}
+#text-of-last-slide {
+    color: #e0e0e0;
+    font-size: 40px;
+    text-align: center;
+    animation: glow 1.5s infinite;
+}
+#one-part-of-division {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+#after-last-slide {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    top: -290px;
+    z-index: 4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Img/abstract.jpg);
+}
+#after-last-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 22%, rgba(0,0,0,0) 100%);
+}
+#title-final {
+    margin-top: 40px;
+    background: linear-gradient(45deg, #c9c9c9, #dbbd85, #3d392c);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    text-align: center;
+}
 
 /* Para telas menores que 1200px (desktops e tablets grandes) */
 @media (max-width: 1747px) {
@@ -1384,8 +1489,22 @@ main {
     #line {
         left: 10%;
     }
+    #slide-of-part-1 {
+        left: 25%;
+
+    }
 
     #line-1 {
+        left: 10%;
+    }
+    
+    #line-2 {
+        right: 10%;
+    }
+    #line-3 {
+        right: 10%;
+    }
+    #line-4 {
         left: 10%;
     }
 
@@ -1583,6 +1702,9 @@ main {
 
 /* Para telas menores que 768px (tablets e smartphones grandes) */
 @media (max-width: 768px) {
+    #text-of-last-slide {
+        font-size: 30px;
+    }
     #introduction p {
         font-size: 40px;
     }
@@ -1756,6 +1878,10 @@ main {
         position: absolute;
         right: 38%;
         top: -200px;
+    }
+    #title-final {
+        color: #685f5f;
+        font-size: 20px;
     }
     #img-logo-fg {
         position: relative;

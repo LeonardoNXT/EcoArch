@@ -103,6 +103,7 @@ function openSennaTower() {
     const slide6 = document.querySelector("#thirteenth-slide")
     const slide7 = document.querySelector("#fourthenth-slide")
     const video = document.querySelector("#video-2")
+    exitSennaTower()
     slide5.style.display = "flex"
     slide4.style.display = "block"
     slide7.style.display = "flex"
@@ -110,6 +111,12 @@ function openSennaTower() {
     video.style.animation = "modal1 0.5s"
 
     
+}
+function exitSennaTower() {
+    const img1 = document.querySelector("#img-senna-tower")
+    const img2 = document.querySelector("#nineth-img")
+    img1.style.opacity = "0"
+    img2.style.opacity = "0"
 }
 document.addEventListener('DOMContentLoaded', function() {
     const video2 = document.getElementById('video-3');
