@@ -95,7 +95,7 @@ body{
     width: 100%;
     height: 100vh;
     background: rgb(47,57,47);
-    background: linear-gradient(180deg, rgba(47,57,47,1) 0%, rgba(66,84,65,1) 100%);
+    background: linear-gradient(180deg, #2f392f 0%, rgba(66,84,65,1) 100%);
     display: grid;
     place-items: center;
 }
