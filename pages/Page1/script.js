@@ -102,13 +102,19 @@ function openSennaTower() {
     const slide5 = document.querySelector("#twelfth-slide")
     const slide6 = document.querySelector("#thirteenth-slide")
     const slide7 = document.querySelector("#fourthenth-slide")
+    const slide8 = document.querySelector("#out-last-slide")
+    const slide9 = document.querySelector("#after-last-slide")
+    const slide10 = document.querySelector("#last-slide")
     const video = document.querySelector("#video-2")
     exitSennaTower()
     slide5.style.display = "flex"
     slide4.style.display = "block"
     slide7.style.display = "flex"
     slide6.style.display = "flex"
+    slide8.style.display = "flex"
+    slide9.style.display = "flex"
     video.style.animation = "modal1 0.5s"
+    slide10.style.display = "none"
 
     
 }
