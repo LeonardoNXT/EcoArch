@@ -1941,6 +1941,12 @@ main {
     #eighth-slide {
         padding: 90px 0;
     }
+    #text-Damper-1 p {
+        font-size: 18px;
+    }
+    #all-content-of-div{
+        padding: 44px;
+    }
 }
 
 @media (max-width: 390px) {
@@ -1973,9 +1979,7 @@ main {
     #text-Damper p {
         font-size: 16px;
     }
-    #text-Damper-1 p {
-        font-size: 16px;
-    }
+
 
     .navigation-auto {
         width: 200px;
