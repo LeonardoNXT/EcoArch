@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html {
@@ -14,6 +15,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #000000;
 }
+
+@media (prefers-color-scheme: white)
 
 /*------------------------------ Main Home ---------------------------------- */
 main {
