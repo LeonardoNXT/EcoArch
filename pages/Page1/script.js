@@ -149,3 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   const section = document.querySelector("#thirteenth-slide")
 
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if(isDarkMode){
+    document.write(`<meta name="color-scheme" content="dark Only"><\/meta>`);
+  }
