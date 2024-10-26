@@ -297,3 +297,14 @@ main {
         left: 10%;
     }
 }
+@media (max-width: 400px){
+    #introduction-2 p {
+        font-size: 15px;
+    }
+    #title-box {
+        font-size: 25px;
+    }
+    #text-box {
+        font-size: 14px;
+    }
+}
