@@ -1554,12 +1554,12 @@ main {
     #part-of-div {
         width: 70%;
     }
-    #twelfth-slide {
-        height: 60vh;
-    }
 }
 
 @media (max-width: 1200px) {
+    #twelfth-slide {
+        height: 60vh;
+    }
     #introduction p {
         font-size: 80px;
     }
