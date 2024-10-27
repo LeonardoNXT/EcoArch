@@ -8,6 +8,13 @@
 </head>
 <body>
     <main>
+        <div class="loading">
+            <div class="loader">
+                <li class="ball"></li>
+                <li class="ball"></li>
+                <li class="ball"></li>
+            </div>
+        </div>
         <section id="introduction">
             <video src="./css/video/videoplayback.mp4" autoplay loop muted></video>
             <div id="introduction-1">
@@ -27,7 +34,14 @@
                     <div id="beggining-box">
                         <p class="hidden" id="title-box">Controle de Iluminação</p>
                         <p class="hidden" id="text-box">A iluminação inteligente permite que a iluminação seja controlada e ajustada de acordo com o ambiente.</p>
-                        <video class="hidden" src="css/video/videoplayback2.mp4" autoplay loop muted id="video-1"></video>
+                        <div id="video-box">
+                            <div class="hidden" id="text-video-box">
+                                <p id="soma">+</p>
+                                <p id="text-video">Saiba mais</p>
+                            </div>
+                            <video class="hidden" src="css/video/videoplayback2.mp4" autoplay loop muted id="video-1"></video>
+                        </div>
+
                     </div>
                 </div>
         </section>
