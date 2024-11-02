@@ -474,5 +474,16 @@ main {
     #text-box {
         font-size: 14px;
     }
+    #video-box {
+        margin-bottom: 40px;
+    }
 
+}
+@media screen and (max-width: 375px) {
+    #title-box {
+        font-size: 22px;
+    }
+    #text-box{
+        font-size: 13px;
+    }
 }
