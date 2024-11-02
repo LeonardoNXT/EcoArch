@@ -460,12 +460,12 @@ main {
         left: 10%;
     }
 }
-@media (max-width: 412px) {
+@media (max-width: 420px) {
     #introduction-2 p {
         font-size: 17px;
     }
     #title-box {
-        font-size: 28px;
+        font-size: 25px;
     }
     #text-box {
         font-size: 16px;
