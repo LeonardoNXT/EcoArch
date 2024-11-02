@@ -415,6 +415,13 @@ main {
     #beggining-box {
         left: 10%;
     }
+    #part-one {
+        height: 100%
+    }
+    #video-box {
+        margin-top: 20px;
+    }
+
     #beggining {
        height: 60vh;
     }
@@ -485,5 +492,8 @@ main {
     }
     #text-box{
         font-size: 13px;
+    }
+    #introduction-2 p {
+        font-size: 14px;
     }
 }
