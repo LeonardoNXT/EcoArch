@@ -23,3 +23,13 @@ const myObserver = new IntersectionObserver(entries => {
 
 const elements = document.querySelectorAll('.hidden')
 elements.forEach(el => myObserver.observe(el))
+
+function openModal() {
+    const janela1 = document.querySelector('#beggining-2')
+    const janela2 = document.querySelector('#beggining-TEST')
+
+    janela1.style.display = 'flex'
+    janela1.style.opacity = '1'
+    janela2.style.display = 'flex'
+    janela2.style.opacity = '1'
+}
