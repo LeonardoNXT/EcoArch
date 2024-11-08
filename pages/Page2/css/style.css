@@ -222,7 +222,7 @@ main {
 
 #line3 {
     width: 1px;
-    height: 20%;
+    height: 30%;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(209,209,209,1) 100%);
     position: absolute;
@@ -278,18 +278,46 @@ main {
 #soma {
     color: white;
 }
+#video-3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#part-1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#part-2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
 #text-video {
     color: white;
     cursor: pointer;
 }
 #beggining-2 {
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     overflow: hidden;
+}
+#beggining-2 p {
+    position: relative;
+    z-index: 2;
+    font-size: 40px;
+    color: wheat;
 }
 #beggining-2::before {
     content: "";
@@ -299,7 +327,8 @@ main {
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.596);
-    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(231,231,231,0) 50%, rgba(0,0,0,1) 100%);
+    background: rgb(231,231,231);
+    background: linear-gradient(180deg, rgba(231,231,231,0) 0%, rgba(0,0,0,1) 100%);
     z-index: 1;
 }
 #video3 {
@@ -311,7 +340,7 @@ main {
 }
 #line4 {
     width: 1px;
-    height: 20%;
+    height: 30%;
     background: rgb(209,209,209);
     background: linear-gradient(180deg, rgba(209,209,209,1) 0%, rgba(255, 255, 255, 0) 100%);
     position: absolute;
@@ -321,14 +350,52 @@ main {
 }
 #beggining-3 {
     width: 100%;
-    height: 100vh;
+    height: 140vh;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     background-color: black;
 }
+#part-text-3{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    height: max-content;
+}
+#part-text-3-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: max-content;
+}
+#part-text-3-2 p {
+    font-size: 40px;
+    color: transparent;
+    background: linear-gradient(143deg, rgba(255,210,210,1) 0%, rgba(255,244,3,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    width: 75%;
+    margin-top: 40px;
+}
+
+#part-text-3 p{
+    font-size: 23px;
+    color: #f7e6e6;
+    width: 75%;
+    height: max-content;
+}
+#part-text-4{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    height: max-content;
+}
+#part-text-4 p{
+    font-size: 25px;
+    color: #f7e6e6;
+    width: 75%;
+    height: max-content;
+}
+
 #line5 {
     width: 1px;
     height: 100%;
@@ -338,6 +405,45 @@ main {
     align-self: flex-start;
     right: 10%;
 }
+#content-beggining-3{
+    display: flex;
+    height: 100%;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    color: white;
+    flex-direction: column;
+}
+#part-video-3 {
+    margin-top: 60px;
+    width:  100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#part-video-3 video {
+    width: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#beggining-TEST {
+    width: 100%;
+    height: 130vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#centralize-div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    flex-direction: column;
+    position: relative;
+}	
+
 
 /* -----CONFIG SECOND----- */
 #second {
@@ -401,6 +507,10 @@ main {
     #video-1 {
         width: 80%;
     }
+    #part-text-3 p{
+        font-size: 24px;
+        text-align: justify;
+    }
 }
 @media (max-width: 500px) {
     #introduction-1 p:nth-child(1){
@@ -459,8 +569,38 @@ main {
         font-size: 18px;
         left: 10%;
     }
+    #beggining-2 p {
+        font-size: 30px;
+    }
+    #part-video-3 video {
+        width: 80%;
+    }
+    #centralize-div {
+        width: 90%;
+    }
+    #part-text-3-2 p {
+        font-size: 30px;
+    }
+    #beggining-2 {
+        height: 150vh;
+    }
+    #part-1 {
+        height: 60%;
+    }
+    #part-2 {
+        height: 40%;
+    }
+    #part-text-3-2 p {
+        width: 90%;
+    }
+    #part-text-3 p {
+        width: 90%;
+        text-align: start;
+        font-style: 20px;
+    }
 }
-@media (max-width: 420px) {
+
+@media (max-width: 412px) {
     #introduction-2 p {
         font-size: 17px;
     }
@@ -469,6 +609,12 @@ main {
     }
     #text-box {
         font-size: 16px;
+    }
+    #part-text-3 p{
+        font-size: 20px;
+    }
+    #part-text-3-2 p{
+        font-size: 28px;
     }
 }
 @media (max-width: 400px){
