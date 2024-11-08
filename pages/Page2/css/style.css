@@ -659,6 +659,9 @@ main {
     #part-text-3-2 p{
         font-size: 28px;
     }
+    .menu {
+        height: 9vh;
+    }
 }
 @media (max-width: 400px){
     #introduction-2 p {
