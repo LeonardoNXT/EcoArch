@@ -71,7 +71,7 @@ const myObserver2 = new IntersectionObserver(entries => {
         
         if (entry.isIntersecting) {
             gradient2.style.opacity = '1'
-            body.style.backgroundColor = 'white'
+            body.style.backgroundColor = 'whitefgi'
         }
         else{
             gradient2.style.opacity = '0'
@@ -140,4 +140,26 @@ function openModal() {
     if (elementoParaObservar2) {
         myObserver3.observe(elementoParaObservar2);
     }
+    const myObserver4 = new IntersectionObserver(entries => {
+        console.log(entries);
+        entries.forEach(entry => {
+            const body = document.querySelector('body')
+            
+            if (entry.isIntersecting) {
+                body.style.backgroundColor = '#000000'
+            }
+            else{
+
+            }
+        });
+    });
+    
+    // Seleciona o elemento pelo `id` que você quer observar
+    const elementoParaObservar3 = document.querySelector('#part-2');
+    
+    // Verifica se o elemento existe e então começa a observar
+    if (elementoParaObservar3) {
+        myObserver4.observe(elementoParaObservar3);
+    }
+
 }
