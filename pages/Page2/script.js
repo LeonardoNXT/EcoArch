@@ -86,27 +86,30 @@ if (elementoParaObservar1) {
 }
 
 
-const myObserver4 = new IntersectionObserver(entries => {
+
+
+
+
+const myObserver3 = new IntersectionObserver(entries => {
     console.log(entries);
     entries.forEach(entry => {
-
-        const gradient = document.querySelector('.top-gradient')
+        const gradient2 = document.querySelector('#bottom-gradient-2')
         
         if (entry.isIntersecting) {
-            gradient.style.opacity = '1'
+            gradient2.style.opacity = '1'
         }
         else{
-            gradient.style.opacity = '0'
+            gradient2.style.opacity = '0'
         }
     });
 });
 
 // Seleciona o elemento pelo `id` que você quer observar
-const elementoParaObservar3 = document.querySelector('.overlay-top');
+const elementoParaObservar2 = document.querySelector('#overlay-config-2');
 
 // Verifica se o elemento existe e então começa a observar
-if (elementoParaObservar3) {
-    myObserver4.observe(elementoParaObservar3);
+if (elementoParaObservar2) {
+    myObserver3.observe(elementoParaObservar2);
 }
 
 
