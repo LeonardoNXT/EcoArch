@@ -67,9 +67,11 @@ const myObserver2 = new IntersectionObserver(entries => {
     console.log(entries);
     entries.forEach(entry => {
         const gradient2 = document.querySelector('.bottom-gradient')
+        const body = document.querySelector('body')
         
         if (entry.isIntersecting) {
             gradient2.style.opacity = '1'
+            body.style.backgroundColor = 'white'
         }
         else{
             gradient2.style.opacity = '0'
@@ -85,32 +87,6 @@ if (elementoParaObservar1) {
     myObserver2.observe(elementoParaObservar1);
 }
 
-
-
-
-
-
-const myObserver3 = new IntersectionObserver(entries => {
-    console.log(entries);
-    entries.forEach(entry => {
-        const gradient2 = document.querySelector('#bottom-gradient-2')
-        
-        if (entry.isIntersecting) {
-            gradient2.style.opacity = '1'
-        }
-        else{
-            gradient2.style.opacity = '0'
-        }
-    });
-});
-
-// Seleciona o elemento pelo `id` que você quer observar
-const elementoParaObservar2 = document.querySelector('#overlay-config-2');
-
-// Verifica se o elemento existe e então começa a observar
-if (elementoParaObservar2) {
-    myObserver3.observe(elementoParaObservar2);
-}
 
 
 
@@ -136,5 +112,32 @@ function openModal() {
 
     if (targetDiv) {
         targetDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    const myObserver3 = new IntersectionObserver(entries => {
+        console.log(entries);
+        entries.forEach(entry => {
+            const gradient2 = document.querySelector('#bottom-gradient-2')
+            const gradient3 = document.querySelector('#top-gradient-2')
+            const body = document.querySelector('body')
+            
+            if (entry.isIntersecting) {
+                gradient2.style.opacity = '1'
+                gradient3.style.opacity = '1'
+                body.style.backgroundColor = '#000000'
+            }
+            else{
+                gradient2.style.opacity = '0'
+                gradient3.style.opacity = '0'
+            }
+        });
+    });
+    
+    // Seleciona o elemento pelo `id` que você quer observar
+    const elementoParaObservar2 = document.querySelector('#overlay-config-2');
+    
+    // Verifica se o elemento existe e então começa a observar
+    if (elementoParaObservar2) {
+        myObserver3.observe(elementoParaObservar2);
     }
 }
