@@ -112,6 +112,66 @@ body {
     filter: blur(0px);
     
 }
+
+.top-gradient, .bottom-gradient {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 200px; /* ajuste a altura conforme necessário */
+    pointer-events: none;
+    z-index: 3;
+    transition: 0.5s all;
+}
+.bottom-gradient {
+    bottom: 0;
+    background: linear-gradient(to top, rgb(255, 255, 255), transparent);
+}
+#bottom-gradient-2{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    pointer-events: none;
+    z-index: 3;
+    transition: 0.5s all;
+    bottom: 0;
+    background: linear-gradient(to top, rgb(7, 7, 7), transparent);
+    opacity: 0;
+}
+#top-gradient-2{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    pointer-events: none;
+    z-index: 3;
+    transition: 0.5s all;
+    top: 0;
+    background: linear-gradient(to bottom, rgb(7, 7, 7), transparent);
+    opacity: 0;
+}
+#space{
+    width: 100%;
+    height: calc(100% - 200px);
+    position: absolute;
+    z-index: -999;
+}
+#space-2{
+    width: 100%;
+    position: absolute;
+    z-index: -999;
+    height: calc(68% - 200px);
+}
+#overlay-config{
+    width: 100%;
+    height: max-content;
+    position: relative;
+}
+#overlay-config-2{
+    width: 100%;
+    height: max-content;
+    position: relative;
+}
 /* -----CONFIG PAGE----- */
 
 main {
@@ -551,6 +611,15 @@ main {
     display: flex;
     box-shadow: 0 0 20px #e8f1b033;
 }
+#slide2 {
+    width: 75%;
+    height: 70%;
+    border: 1px solid #f7f7f79f;
+    border-radius: 40px;
+    transition-delay: 200ms;
+    display: flex;
+    box-shadow: 0 0 20px #e8f1b033;
+}
 #part-1-slide{
     width: 50%;
     height: 100%;
@@ -602,11 +671,30 @@ main {
     justify-content: center;
     align-items: center;
 }
+#part-2-slide-2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #part-2-slide img{
+    object-fit: cover;
+    mix-blend-mode: color-burn;
     width: 450px;
+    height: 450px;
     border-radius: 20%;
     filter: saturate(50%);
     border: 1px solid rgba(236, 247, 212, 0.301);
+
+}
+#part-2-slide-2 img{
+    object-fit: cover;
+    mix-blend-mode: darken;
+    width: 450px;
+    height: 450px;
+    border-radius: 20%;
+    filter: saturate(50%);
 }
 
 /* -----CONFIG THIRD----- */
@@ -630,8 +718,113 @@ main {
     align-self: flex-start;
     left: 10%;
 }
+#line11{
+    width: 1px;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    position: absolute;
+    z-index: 2;
+    align-self: flex-start;
+    right: 10%;
+}
+/* -----CONFIG FOURTH----- */
+#fourth {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: rgb(0,0,0);
+}
+#line14{
+    width: 1px;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255,255,255,0) 100%);
+    position: absolute;
+    z-index: 2;
+    align-self: flex-start;
+    left: 10%;
+}
 
 
+/* -----CONFIG FIFTH----- */
+#fifth {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: rgb(0,0,0);
+
+}
+#fifth::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+    left: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%);
+}
+#fifth p {
+    position: absolute;
+    font-size: 45px;
+    z-index: 5;
+    color: transparent;
+    background:linear-gradient(45deg, #84e4e4, #dfcc81);
+    font-weight: 500;
+    background-clip: text;
+
+}
+#line12{
+    width: 1px;
+    height: 25%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,236,151,1) 100%);
+    position: absolute;
+    z-index: 5;
+    align-self: flex-start;
+    right: 10%;
+}
+#line13{
+    width: 1px;
+    height: 25%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,236,151,1) 0%, rgb(255, 255, 255) 100%);
+    position: absolute;
+    z-index: 5;
+    align-self: flex-start;
+    left: 10%;
+    bottom: 0;
+}
+#video-4{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+/* -----CONFIG SIXTH----- */
+#sixth {
+    display: none;
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: rgb(0,0,0);
+}
 /* -----MEDIA QUIERIES----- */
 @media (max-width: 1400px) {
     #introduction-2 p {
@@ -660,6 +853,11 @@ main {
     }
     #part-2-slide img {
         width: 290px;
+        height: 290px;
+    }
+    #part-2-slide-2 img {
+        width: 290px;
+        height: 290px;
     }
     #content-part-1 p:nth-child(1){
         font-size: 27px;
@@ -691,6 +889,11 @@ main {
         flex-direction: column-reverse;
         border-radius: 13px;
     }
+    #slide2 {
+        height: 80%;
+        flex-direction: column;
+        border-radius: 13px;
+    }
     #part-1-slide{
         width: 100%;
         height: 55%;
@@ -699,9 +902,22 @@ main {
         width: 100%;
         height: 45%;
     }
+    #part-2-slide-2{
+        width: 100%;
+        height: 45%;
+    }
     #part-2-slide img {
         width: 250px;
+        height: 250px;
         margin-top: 30px;
+    }
+    #part-2-slide-2 img {
+        width: 250px;
+        height: 250px;
+        margin-top: 30px;
+    }
+    #part-text-3-2 p{
+        font-size: 40px;
     }
 }
 @media (max-width: 750px) {
@@ -744,6 +960,10 @@ main {
         border-color: rgba(252, 252, 252, 0.473);
         height: 90%;
     }
+    #slide2 {
+        border-color: rgba(252, 252, 252, 0.473);
+        height: 90%;
+    }
     #content-part-1 p:nth-child(2){
         font-size: 15px;
         margin-top: 20px;
@@ -762,6 +982,10 @@ main {
         margin-top: 20px;
     }
     #part-2-slide{
+        display: none;
+    }
+    
+    #part-2-slide-2{
         display: none;
     }
     #part-1-slide{
@@ -811,6 +1035,12 @@ main {
     #line2 {
         left: 5%;
     }
+    #line13 {
+        left: 5%;
+    }
+    #line14 {
+        left: 5%;
+    }
     #line3 {
         right: 5%;
     }
@@ -820,6 +1050,12 @@ main {
     #line5 {
         right: 5%;
     }
+    #line11{
+        right: 5%;
+    }
+    #line12{
+        right: 5%;
+    }
     #line6 {
         right: 5%;
     }
@@ -827,6 +1063,9 @@ main {
         left: 5%;
     }
     #slide1{
+        width: 90%;
+    }
+    #slide2{
         width: 90%;
     }
     #line7{
@@ -884,6 +1123,9 @@ main {
     #third {
         height: 50vh;
     }
+    #fourth {
+        height: 50vh;
+    }
 }
 
 @media (max-width: 415px) {
@@ -931,7 +1173,40 @@ main {
     }
 
 }
-@media screen and (max-width: 375px) {
+
+@media (max-width: 1366px) and (max-height: 768px) {
+    #introduction-1 p:nth-child(1){
+        font-size: 50px;
+    }
+    #video-1{
+        width: 40%;
+    }
+    #part-text-3-2 p{
+        font-size: 40px;
+    }
+    #part-text-3 p{
+        font-size: 20px;
+    }
+    #content-part-1 p:nth-child(2){
+        font-size: 14px;
+    }
+    #beggining{
+        height: 90vh;
+    }
+    #title-box{
+        font-size: 30px;
+    }
+    #text-box{
+        font-size: 18px;
+    }
+    #introduction-2 p{
+        font-size: 20px;
+    }
+    .menu {
+        height: 12vh;
+    }
+}
+@media screen and (max-width: 375px) and (max-height: 740px) {
     #title-box {
         font-size: 22px;
     }
@@ -960,64 +1235,27 @@ main {
     #content-part-1 a {
         font-size: 12px;
     }
+    #video-1{
+        width: 95%;
+    }
 }
-
-.top-gradient, .bottom-gradient {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    height: 200px; /* ajuste a altura conforme necessário */
-    pointer-events: none;
-    z-index: 3;
-    transition: 0.5s all;
-}
-.bottom-gradient {
-    bottom: 0;
-    background: linear-gradient(to top, rgb(255, 255, 255), transparent);
-}
-#bottom-gradient-2{
-    position: fixed;
-    left: 0;
-    width: 100%;
-    height: 200px;
-    pointer-events: none;
-    z-index: 3;
-    transition: 0.5s all;
-    bottom: 0;
-    background: linear-gradient(to top, rgb(7, 7, 7), transparent);
-    opacity: 0;
-}
-#top-gradient-2{
-    position: fixed;
-    left: 0;
-    width: 100%;
-    height: 200px;
-    pointer-events: none;
-    z-index: 3;
-    transition: 0.5s all;
-    top: 0;
-    background: linear-gradient(to bottom, rgb(7, 7, 7), transparent);
-    opacity: 0;
-}
-#space{
-    width: 100%;
-    height: calc(100% - 200px);
-    position: absolute;
-    z-index: -999;
-}
-#space-2{
-    width: 100%;
-    position: absolute;
-    z-index: -999;
-    height: calc(68% - 200px);
-}
-#overlay-config{
-    width: 100%;
-    height: max-content;
-    position: relative;
-}
-#overlay-config-2{
-    width: 100%;
-    height: max-content;
-    position: relative;
+@media screen and (max-width: 344px){
+    #part-text-3-2 p{
+        font-size: 24px;
+    }
+    #part-text-3 p{
+        font-size: 14px;
+    }
+    #content-part-1 p:nth-child(1){
+        font-size: 18px;
+    }
+    #content-part-1 p:nth-child(2){
+        font-size: 12px;
+    }
+    #beggining-2 p {
+        font-size: 25px;
+    }
+    #content-part-1 a{
+        font-size: 10px;
+    }
 }

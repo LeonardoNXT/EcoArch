@@ -99,6 +99,9 @@ function openModal() {
     const janela2 = document.querySelector('#beggining-TEST')
     const janela3 = document.querySelector('#second')
     const janela4 = document.querySelector('#third')
+    const janela5 = document.querySelector('#fourth')
+    const janela6 = document.querySelector('#fifth')
+    const janela7 = document.querySelector('#sixth')
     const targetDiv = document.querySelector('#part-1');
 
     janela1.style.display = 'flex'
@@ -109,6 +112,12 @@ function openModal() {
     janela3.style.opacity = '1'
     janela4.style.display = 'flex'
     janela4.style.opacity = '1'
+    janela5.style.display = 'flex'
+    janela5.style.opacity = '1'
+    janela6.style.display = 'flex'
+    janela6.style.opacity = '1'
+    janela7.style.display = 'flex'
+    janela7.style.opacity = '1'
 
     if (targetDiv) {
         targetDiv.scrollIntoView({ behavior: 'smooth' });
