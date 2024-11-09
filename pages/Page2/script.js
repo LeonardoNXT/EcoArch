@@ -58,9 +58,20 @@ if (elementoParaObservar) {
 function openModal() {
     const janela1 = document.querySelector('#beggining-2')
     const janela2 = document.querySelector('#beggining-TEST')
+    const janela3 = document.querySelector('#second')
+    const janela4 = document.querySelector('#third')
+    const targetDiv = document.querySelector('#part-1');
 
     janela1.style.display = 'flex'
     janela1.style.opacity = '1'
     janela2.style.display = 'flex'
     janela2.style.opacity = '1'
+    janela3.style.display = 'flex'
+    janela3.style.opacity = '1'
+    janela4.style.display = 'flex'
+    janela4.style.opacity = '1'
+
+    if (targetDiv) {
+        targetDiv.scrollIntoView({ behavior: 'smooth' });
+    }
 }
