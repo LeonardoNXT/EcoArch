@@ -601,6 +601,8 @@ main {
 #part-2-slide img{
     width: 450px;
     border-radius: 20%;
+    filter: saturate(50%);
+    border: 1px solid rgba(236, 247, 212, 0.301);
 }
 
 /* -----CONFIG THIRD----- */
@@ -868,6 +870,9 @@ main {
     .menu {
         width: 65%;
     }
+    #space-2{
+        height: calc(55% - 200px);
+    }
 }
 
 @media (max-width: 415px) {
@@ -944,4 +949,42 @@ main {
     #content-part-1 a {
         font-size: 12px;
     }
+}
+
+.top-gradient, .bottom-gradient {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 200px; /* ajuste a altura conforme necessário */
+    pointer-events: none;
+    z-index: 3;
+    transition: 0.5s all;
+}
+
+.top-gradient {
+    top: 0;
+    background: rgb(252,252,252);
+    background: linear-gradient(180deg, rgba(252,252,252,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.bottom-gradient {
+    bottom: 0;
+    background: linear-gradient(to top, rgb(255, 255, 255), transparent);
+}
+#space{
+    width: 100%;
+    height: calc(100% - 200px);
+    position: absolute;
+    z-index: -999;
+}
+#space-2{
+    width: 100%;
+    position: absolute;
+    z-index: -999;
+    height: calc(68% - 200px);
+}
+#overlay-config{
+    width: 100%;
+    height: max-content;
+    position: relative;
 }

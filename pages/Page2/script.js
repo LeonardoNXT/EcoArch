@@ -30,8 +30,12 @@ const myObserver = new IntersectionObserver(entries => {
 const elements = document.querySelectorAll('.hidden')
 elements.forEach(el => myObserver.observe(el))
 
+
+
+
+
+
 const myObserver1 = new IntersectionObserver(entries => {
-    console.log(entries);
     entries.forEach(entry => {
         const menu = document.querySelector('.menu'); // Seleciona o elemento com a classe 'menu'
         
@@ -51,6 +55,62 @@ const elementoParaObservar = document.getElementById('texto');
 if (elementoParaObservar) {
     myObserver1.observe(elementoParaObservar);
 }
+
+
+
+
+
+
+
+
+const myObserver2 = new IntersectionObserver(entries => {
+    console.log(entries);
+    entries.forEach(entry => {
+        const gradient2 = document.querySelector('.bottom-gradient')
+        
+        if (entry.isIntersecting) {
+            gradient2.style.opacity = '1'
+        }
+        else{
+            gradient2.style.opacity = '0'
+        }
+    });
+});
+
+// Seleciona o elemento pelo `id` que você quer observar
+const elementoParaObservar1 = document.querySelector('.overlay');
+
+// Verifica se o elemento existe e então começa a observar
+if (elementoParaObservar1) {
+    myObserver2.observe(elementoParaObservar1);
+}
+
+
+const myObserver4 = new IntersectionObserver(entries => {
+    console.log(entries);
+    entries.forEach(entry => {
+
+        const gradient = document.querySelector('.top-gradient')
+        
+        if (entry.isIntersecting) {
+            gradient.style.opacity = '1'
+        }
+        else{
+            gradient.style.opacity = '0'
+        }
+    });
+});
+
+// Seleciona o elemento pelo `id` que você quer observar
+const elementoParaObservar3 = document.querySelector('.overlay-top');
+
+// Verifica se o elemento existe e então começa a observar
+if (elementoParaObservar3) {
+    myObserver4.observe(elementoParaObservar3);
+}
+
+
+
 
 
 
