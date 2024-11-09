@@ -71,7 +71,7 @@ const myObserver2 = new IntersectionObserver(entries => {
         
         if (entry.isIntersecting) {
             gradient2.style.opacity = '1'
-            body.style.backgroundColor = 'whitefgi'
+            body.style.backgroundColor = 'white'
         }
         else{
             gradient2.style.opacity = '0'
@@ -119,12 +119,10 @@ function openModal() {
         entries.forEach(entry => {
             const gradient2 = document.querySelector('#bottom-gradient-2')
             const gradient3 = document.querySelector('#top-gradient-2')
-            const body = document.querySelector('body')
             
             if (entry.isIntersecting) {
                 gradient2.style.opacity = '1'
                 gradient3.style.opacity = '1'
-                body.style.backgroundColor = '#000000'
             }
             else{
                 gradient2.style.opacity = '0'
@@ -147,9 +145,6 @@ function openModal() {
             
             if (entry.isIntersecting) {
                 body.style.backgroundColor = '#000000'
-            }
-            else{
-
             }
         });
     });
