@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edifícios Inteligentes</title>
+    <link rel="shortcut icon" href="./CSS/Img/Variant.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div class="loading">
+        <div class="loader">
+            <li class="ball"></li>
+            <li class="ball"></li>
+            <li class="ball"></li>
+        </div>
+    </div>
+    <main>
+        <section id="introduction">
+            <div id="config-text">
+                <p>Edifícios Inteligentes</p>
+                <p>By Variant</p>
+            </div>
+            <div id="links-config-box">
+                <div id="buttons-box">
+                    <a href="#firsh-slide" id="btn-title">Apresentação</a>
+                </div>
+                <div id="buttons-box">
+                    <a href="../../index.html" id="btn-title">EcoArch</a>
+                </div>
+                <div id="buttons-box">
+                    <a href="" id="btn-title">Equipe</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="firsh-slide">
+            <div id="slide">
+                <div id="part-one">
+                    <div id="config-text-slide">
+                        <p>Introdução aos Edifícios
+                            Inteligentes e Sustentáveis
+                        </p>
+                        <p>A urbanização crescente e as mudanças climáticas têm aumentado a demanda por soluções que
+                            combinem tecnologia e sustentabilidade para reduzir a pegada ecológica das cidades.
+                        </p>
+                    </div>
+
+                </div>
+                <div id="part-two">
+                    <img src="./CSS/Img/rosewood.png" id="image-config" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="second-slide">
+            <div id="slide-1">
+                <div id="part-one">
+                    <div id="config-text-slide-1">
+                        <p>Relevância no contexto atual:
+                        </p>
+                        <p>Edifícios inteligentes são essenciais para cidades inteligentes, contribuindo para a
+                            sustentabilidade e qualidade de vida urbana. Eles utilizam tecnologia para gerenciar
+                            recursos de forma eficiente, reduzindo o consumo de energia e água. Isso melhora o conforto
+                            dos habitantes e minimiza o impacto ambiental.
+                        </p>
+                    </div>
+
+                </div>
+                <div id="part-two">
+                    <img src="./CSS/Img/Building.jpg" id="image-config" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="third-slide">
+            <div id="slide">
+                <div id="part-one">
+                    <div id="config-text-slide">
+                        <p>
+                            Rosewood Hotel - SP
+                        </p>
+                        <p>O Rosewood São Paulo, projetado por Jean Nouvel, é um ícone de luxo sustentável. Com jardins
+                            verticais e arquitetura contemporânea, o hotel harmoniza natureza e design moderno.
+                            Utilizando materiais locais e práticas ecológicas, oferece uma experiência sofisticada e
+                            consciente.
+                        </p>
+                    </div>
+
+                </div>
+                <div id="part-two">
+                    <div class="slider">
+                        <div class="slides">
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+
+                            <div class="slide first">
+                                <img src="./CSS/Img/rosewood.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./CSS/Img/rosewood2.png" id="rose2" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./CSS/Img/rosewood3.jpg" id="rose3" alt="">
+                            </div>
+
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                            </div>
+                        </div>
+                        <div class="manual-navigation">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fourth-slide">
+            <img src="./CSS/Img/Green wallpaper.png" alt="Imagem com gradiente">
+            <div id="title-box">
+                Sabia que o conceito de edifícios inteligentes começou a ganhar força na década de 1980? Hoje, eles vão
+                além de automação, integrando IA e IoT.
+            </div>
+        </section>
+        <section id="fifth-slide">
+            <div id="slide">
+                <div id="part-one">
+                    <div id="config-text-slide">
+
+                        <p>A Tecnologia por Trás dos Edifícios Inteligentes
+                        </p>
+                        <p>Sensores são responsáveis por monitorar diversas condições internas e externas, como
+                            temperatura, iluminação, qualidade do ar, presença de pessoas e até níveis de umidade.
+                        </p>
+                    </div>
+                    <div href="" id="btn-box" onclick="openModal()">Saiba mais</div>
+
+                </div>
+                <div id="part-two">
+                    <img src="./CSS/Img/bullitt.jpg" id="image-config" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="sixth-slide">
+            <div id="the-line-box">
+                <p id="the-line-title">The Line</p>
+                <div id="btn-box-2" onclick="openTheLine()">Saiba mais</div>
+            </div>
+        </section>
+        <section id="seventh-slide">
+            <div id="video-box">
+                <video src="./CSS/Video/videoplayback.mp4" id="video" autoplay loop></video>
+            </div>
+        </section>
+        <section id="eighth-slide">
+            <div id="slides-3">
+                <div id="config-button">
+                    <div id="btn-slide-3" onclick="openModal2()">Saiba mais</div>
+                </div>
+
+                <div id="config-slides-3">
+                    <p id="text-slide-3">Design Inovador e Ecológico</p>
+                </div>
+            </div>
+            <div id="slides-3">
+                <div id="config-button">
+                    <div id="btn-slide-3" onclick="openModal3()">Saiba mais</div>
+                </div>
+                <div id="config-slides-3">
+                    <p id="text-slide-3">Impacto Ambiental Zero</p>
+                </div>
+
+            </div>
+            <div id="slides-3">
+                <div id="config-button">
+                    <div id="btn-slide-3" onclick="openModal4()">Saiba mais</div>
+                </div>
+                <div id="config-slides-3">
+                    <p id="text-slide-3">Tecnologia de Transporte Rápido</p>
+                </div>
+
+            </div>
+        </section>
+        <section id="ninth-slide">
+            <div id="slide-nine">
+                <div id="part-one-nine">
+                    <div id="config-text-slide">
+                        <p>Impacto Ambiental: O Poder
+                            da Eficiência Energética
+                        </p>
+                        <p>Edifícios inteligentes usam automação e sensores para otimizar energia e recursos, ajustando
+                            iluminação e climatização de forma eficiente. Com fontes renováveis e gestão sustentável da
+                            água, reduzem a pegada de carbono e melhoram o conforto, contribuindo para a preservação
+                            ambiental.
+                        </p>
+                    </div>
+                    <div href="" id="btn-box" onclick="openModal5()">Saiba mais</div>
+                </div>
+                <div id="part-two">
+                    <img src="./CSS/Img/line2.png" id="image-config" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="tenth-slide">
+            <div id="senna-tower-slide">
+
+                <img src="./CSS/Img/nineth.png" id="nineth-img">
+                <img src="CSS/Img/file.png" id="img-senna-tower" alt="" srcset="">
+                <div id="btn-box-2" onclick="openSennaTower()">Saiba mais</div>
+                <img src="https://cdn.prod.website-files.com/66df13083d770f5bf4c8f0e3/66df44d4762bdbf4b9c3cdf0_logo_senna-tower-2.svg"
+                    id="img-logo-fg" alt="" srcset="">
+
+            </div>
+        </section>
+        <section id="eleventh-slide">
+            <div id="config-video-svg">
+                <video src="./CSS/Video/SennaIntroducion.mp4 " id="video-2" autoplay loop muted></video>
+                <img src="https://cdn.prod.website-files.com/66df13083d770f5bf4c8f0e3/66df44d4762bdbf4b9c3cdf0_logo_senna-tower-2.svg"
+                    id="img-logo-fg-2" alt="" srcset="">
+            </div>
+            <div id="complement-page">
+                <div id="video-senna-config">
+                    <div id="config-area-btn">
+                        <div id="config-btn-and-p">
+                            <div id="btn-video-config" onclick="openModal6()">
+                                <img src="https://cdn.prod.website-files.com/66df13083d770f5bf4c8f0e3/66e20f9112bf338cd0e7da83_icon_play.svg"
+                                    id="init-video" alt="" srcset="" onclick="openModal6()" />
+                            </div>
+                            <p onclick="openModal6()">ASSISTA AO VIDEO</p>
+                        </div>
+
+                    </div>
+                    <video src="./CSS/Video/sennavideo.mp4" id="video-senna" autoplay loop muted></video>
+                </div>
+            </div>
+        </section>
+        <section id="thirteenth-slide" class="hidden">
+            <div id="line"></div>
+            <div id="centralize-thirteenth">
+                <div id="title-Damper">
+                    <p>MASS DAMPER</p>
+                </div>
+                <div id="text-Damper">
+                    <p>O TMD (Tuned Mass Damper) no Senna Tower é um sistema que atua como contrapeso para reduzir o
+                        balanço causado pelo vento, aumentando o conforto dos moradores. O Senna Tower é o primeiro
+                        edifício da América Latina a usar essa tecnologia.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="fourthenth-slide" class="hidden">
+            <div id="line"></div>
+            <div id="centralize-fourteenth">
+                <div id="title-Damper">
+                    <p>LEED PLATINUM</p>
+                </div>
+                <div id="text-Damper-1">
+                    <p>Primeiro supertall residencial do mundo com o nível máximo da principal certificação ambiental
+                        mundial.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="twelfth-slide">
+            <div id="line-1"></div>
+            <div id="line-2"></div>
+            <video src="./CSS/Video/Page1.mp4 " id="video-3" autoplay loop></video>
+            <div id="part-of-div">
+                <div id="all-content-of-div">
+                    <div id="title-of-div">
+                        <p>500+</p>
+                        <span>Metros</span>
+                    </div>
+                    <div id="text-of-div">
+                        <p>O Senna Tower possui mais de 500 metros de altura, o que o torna o maior arranha-céu
+                            residencial do
+                            mundo. Essa altura impressionante destaca-se no horizonte e redefine os padrões de
+                            construção
+                            residencial.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="out-last-slide">
+            <div id="line-4"></div>
+            <div id="line-3"></div>
+            <p id="text-of-last-slide">"A maior iniciativa de inovação no território nacional."
+            </p>
+        </section>
+        <section id="after-last-slide">
+            <div id="line-1"></div>
+            <p id="title-final">Parece que você chegou ao fim</p>
+        </section>
+        <section id="last-slide">
+            <p id="title-final">Parece que você chegou ao fim</p>
+        </section>
+
+    </main>
+
+
+
+
+
+    <div class="janela-modal" id="janela-modal">
+        <div class="modal">
+            <div id="exit-btn">x</div>
+            <div id="part-one-modal">
+                <div>
+                    <p id="Title-modal">Um Edifício Autossuficiente</p>
+                    <p id="text-modal">Imagine um edifício que coleta sua própria água da chuva, gera sua própria
+                        energia através de
+                        painéis solares, e ajusta automaticamente o consumo de luz e ar-condicionado para economizar
+                        energia. Isso já é realidade em diversos prédios inteligentes ao redor do mundo, como o edifício
+                        "Bullitt Center" em Seattle, que é considerado um dos prédios mais sustentáveis do planeta.</p>
+                </div>
+
+
+            </div>
+
+            <div id="part-two-modal">
+                <img src="./CSS/Img/bullitt.jpg" id="image-config-modal" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="janela-modal-1" id="janela-modal-1">
+        <div class="modal-2">
+            <div id="exit-btn-1">x</div>
+            <div id="part-one-modal-2">
+                <div>
+                    <p id="Title-modal">Design Inovador e Ecológico</p>
+                    <p id="text-modal">The Line é uma cidade futurista planejada para ter 170 km de comprimento, 200
+                        metros de largura e 500 metros de altura, mas sem ruas ou carros. A proposta é que todos os
+                        serviços essenciais estejam a uma caminhada de 5 minutos, e a cidade será movida por 100% de
+                        energia renovável.</p>
+                </div>
+
+
+            </div>
+
+            <div id="part-two-modal-2">
+                <img src="./CSS/Img/TheLine2.png" id="image-config-modal" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="janela-modal-2" id="janela-modal-2">
+        <div class="modal-3">
+            <div id="exit-btn-1">x</div>
+            <div id="part-two-modal-3">
+                <img src="./CSS/Img/TheLine3.png" id="image-config-modal" alt="">
+            </div>
+            <div id="part-one-modal-2">
+                <div>
+                    <p id="Title-modal">Impacto Ambiental Zero</p>
+                    <p id="text-modal">The Line foi projetada para ter zero emissões de carbono. Ao invés de expandir
+                        horizontalmente, como as cidades tradicionais, a cidade será vertical e compacta, o que reduz a
+                        ocupação do solo e preserva 95% da natureza ao seu redor.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="janela-modal-3" id="janela-modal-3">
+        <div class="modal-2">
+            <div id="exit-btn-1">x</div>
+            <div id="part-one-modal-2">
+                <div>
+                    <p id="Title-modal">Tecnologia de Transporte Rápido</p>
+                    <p id="text-modal">A cidade contará com um sistema de transporte de alta velocidade que permitirá
+                        que os residentes percorram os 170 km de ponta a ponta em apenas 20 minutos, o que elimina a
+                        necessidade de veículos tradicionais e reduz drasticamente o tempo de deslocamento.</p>
+                </div>
+
+
+            </div>
+
+            <div id="part-two-modal-4">
+                <img src="./CSS/Img/TheLine4.png" id="image-config-modal" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="janela-modal-4" id="janela-modal-4">
+        <div class="modal">
+            <div id="exit-btn-1">x</div>
+            <div id="part-one-modal-3">
+                <div>
+                    <p id="Title-modal">Impacto Ambiental: O Poder da Eficiência Energética</p>
+                    <p id="text-modal">Edifícios inteligentes reduzem o impacto ambiental ao otimizar o uso de energia e
+                        água através de tecnologias como automação e sensores. Eles ajustam iluminação e climatização de
+                        acordo com a ocupação, utilizam fontes de energia renovável e reaproveitam recursos, como a água
+                        da chuva. Essas soluções aumentam a eficiência, diminuem a pegada de carbono e contribuem para a
+                        sustentabilidade..</p>
+                </div>
+
+
+            </div>
+
+            <div id="part-two-modal">
+                <img src="./CSS/Img/line2.png" id="image-config-modal" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="janela-modal-5" id="janela-modal-5">
+        <div id="exit-btn-1">x</div>
+        <video src="./CSS/Video/sennavideo.mp4" id="video-da-janela" controls>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
