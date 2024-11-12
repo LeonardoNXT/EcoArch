@@ -114,6 +114,11 @@ if (elementoParaObservar2) {
 
 
 
+
+
+
+
+
 // Abrir janelas
 function openModal() {
     const janela1 = document.querySelector('#beggining-2')
@@ -198,4 +203,76 @@ function openModal() {
         myObserver4.observe(elementoParaObservar3);
     }
 
+}
+
+function openModal1() {
+    const janela1 = document.querySelector('#tenth')
+    const janela2 = document.querySelector('#eleventh')
+    const janela3 = document.querySelector('#twelfth')
+    const targetDiv = document.querySelector('#part-1-2');
+
+    janela1.style.display = 'flex'
+    janela1.style.animation = 'opacity 1s ease-in-out'
+    janela1.style.opacity = '1'
+
+    janela2.style.display = 'flex'
+    janela2.style.opacity = '1'
+
+    janela3.style.display = 'flex'
+    janela3.style.opacity = '1'
+    
+
+
+
+
+    const myObserver4 = new IntersectionObserver(entries => {
+        console.log(entries);
+        entries.forEach(entry => {
+            const gradient2 = document.querySelector('#bottom-gradient-4')
+            const gradient3 = document.querySelector('#top-gradient-3')
+            
+            if (entry.isIntersecting) {
+                gradient2.style.opacity = '1'
+                gradient3.style.opacity = '1'
+            }
+            else{
+                gradient2.style.opacity = '0'
+                gradient3.style.opacity = '0'
+            }
+        });
+    });
+    
+    // Seleciona o elemento pelo `id` que você quer observar
+    const elementoParaObservar3 = document.querySelector('.overlay-config-3');
+    
+    // Verifica se o elemento existe e então começa a observar
+    if (elementoParaObservar3) {
+        myObserver4.observe(elementoParaObservar3);
+    }
+    
+    
+    const myObserver5 = new IntersectionObserver(entries => {
+        console.log(entries);
+        entries.forEach(entry => {
+            const gradient2 = document.querySelector('#bottom-gradient-3')
+            
+            if (entry.isIntersecting) {
+                gradient2.style.opacity = '0'
+            }
+            else{
+            }
+        });
+    });
+    
+    // Seleciona o elemento pelo `id` que você quer observar
+    const elementoParaObservar4 = document.querySelector('#part-1-2');
+    
+    // Verifica se o elemento existe e então começa a observar
+    if (elementoParaObservar4) {
+        myObserver5.observe(elementoParaObservar4);
+    }
+
+    if (targetDiv) {
+        targetDiv.scrollIntoView({ behavior: 'smooth' });
+    }
 }
