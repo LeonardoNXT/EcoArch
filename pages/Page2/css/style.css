@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 /* -----CONFIG ALL PAGE----- */
 
 * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 
 }
 html {
@@ -87,7 +87,7 @@ body {
     height: 8vh;
     border : 1px solid #f3f3f333;
     position: fixed;
-    z-index: 4;
+    z-index: 5;
     border-radius: 20px;
     top: -140px;
     right: 50%;
@@ -1172,6 +1172,12 @@ main {
     width: 80%;
     z-index: 2;
 }
+#part-text-2{
+    position: relative;
+    left: 5%;
+    width: 80%;
+    z-index: 2;
+}
 #part-text-1 p:nth-child(1){
     margin-top: 40px;
     font-size: 40px;
@@ -1186,6 +1192,22 @@ main {
     color: transparent;
     background: rgb(51,51,51);
     background: linear-gradient(153deg, rgba(51,51,51,1) 0%, rgba(87,87,87,1) 100%);
+    background-clip: text;
+
+}
+#part-text-2 p:nth-child(1){
+    margin-top: 40px;
+    font-size: 40px;
+    color: transparent;
+    background: rgb(50,50,50);
+    background: linear-gradient(138deg, rgba(50,50,50,1) 0%, rgba(130,110,25,1) 37%, rgba(88,88,88,1) 100%);
+    background-clip: text;
+}
+#part-text-2 p:nth-child(2){
+    margin-top: 20px;
+    font-size: 20px;
+    color: transparent;
+    background-color: #333;
     background-clip: text;
 
 }
@@ -1304,12 +1326,422 @@ main {
     position: relative;
     overflow: hidden;
     background: rgb(255, 255, 255);
-    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+/* -----CONFIG FOURTEENTH----- */
+#fourteenth {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    display: none;
     align-items: center;
     justify-content: center;
 }
 
+
+/* -----CONFIG fifteenth----- */
+#fifthteen {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    display: none;
+    align-items: center;
+    justify-content: center;;
+}
+#centralize-content-5{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+
+/* -----CONFIG Accordion----- */
+
+.accordion-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-btn:hover {
+    background-color: #fafafa;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
+}
+
+.accordion-content p {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* -----CONFIG Azul----- */
+
+#azul {
+    position: relative;
+    left: 5%;
+    width: 70%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #dadada;
+    overflow: hidden;
+    margin-bottom: 30px; /* Espaçamento entre os accordions */
+}
+#azul-box div span:nth-child(2) {
+    font-size: 18px;
+}
+#azul-box div span:nth-child(1) {
+    font-weight: bold;
+
+}
+
+#azul-box div:nth-child(3) {
+    font-size: 24px;
+    color: #4b4b4b;
+    font-weight: bold;
+    width: 50px;
+}
+#azul-box div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #e6e6e6;
+    background: rgb(255,255,255);
+    background: linear-gradient(119deg, rgba(255,255,255,1) 0%, rgba(73,220,255,1) 46%, rgba(205,205,205,1) 100%);
+    box-shadow: 0 0 10px rgba(8, 216, 243, 0.589);
+}
+
+#azul-box div:nth-child(2) {
+    flex: 1;
+    padding: 0 15px;
+    font-size: 18px;
+    color: #696969;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+#azul-box div span {
+    flex: 1;
+    padding: 0 15px;
+    font-size: 24px;
+    color: transparent;
+    background: rgb(50,50,50);
+    background: linear-gradient(138deg, rgba(50,50,50,1) 0%, rgb(21, 218, 221) 37%, rgba(88,88,88,1) 100%);
+    background-clip: text;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* -----CONFIG Red----- */
+
+#red {
+    position: relative;
+    left: 5%;
+    width: 70%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #dadada;
+    overflow: hidden;
+    margin-bottom: 30px; /* Espaçamento entre os accordions */
+}
+#red-box div span:nth-child(2) {
+    font-size: 18px;
+}
+#red-box div span:nth-child(1) {
+    font-weight: bold;
+}
+
+#red-box div:nth-child(3) {
+    font-size: 24px;
+    color: #4b4b4b;
+    font-weight: bold;
+    width: 50px;
+}
+#red-box div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #e00000;
+    background: rgb(255,0,0);
+    background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(148,52,52,1) 100%);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.623);
+}
+
+#red-box div:nth-child(2) {
+    flex: 1;
+    padding: 0 15px;
+    font-size: 18px;
+    color: #696969;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+#red-box div span {
+    flex: 1;
+    padding: 0 15px;
+    font-size: 24px;
+    color: transparent;
+    background: rgb(50,50,50);
+    background: linear-gradient(138deg, rgba(50,50,50,1) 0%, rgba(158,37,37,1) 37%, rgba(88,88,88,1) 100%);
+    background-clip: text;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* -----CONFIG Green----- */
+
+#green {
+    position: relative;
+    left: 5%;
+    width: 70%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #dadada;
+    overflow: hidden;
+    margin-bottom: 30px; /* Espaçamento entre os accordions */
+}
+#green-box div span:nth-child(2) {
+    font-size: 18px;
+}
+#green-box div span:nth-child(1) {
+    font-weight: bold;
+}
+
+#green-box div:nth-child(3) {
+    font-size: 24px;
+    color: #4b4b4b;
+    font-weight: bold;
+    width: 50px;
+}
+#green-box div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #e6e6e6;
+    background: rgb(12,215,148);
+    background: linear-gradient(59deg, rgba(12,215,148,1) 0%, rgba(0,255,29,1) 47%, rgba(200,204,45,1) 100%);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.637);
+}
+
+#green-box div:nth-child(2) {
+    flex: 1;
+    padding: 0 15px;
+    font-size: 18px;
+    color: #696969;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+#green-box div span {
+    flex: 1;    
+    padding: 0 15px;
+    font-size: 24px;
+    color: transparent;
+    background: rgb(50,50,50);    
+    background: linear-gradient(138deg, rgba(50,50,50,1) 0%, rgba(37,158,37,1) 37%, rgba(88,88,88,1) 100%);
+    background-clip: text;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* -----CONFIG yellow----- */
+
+#yellow {
+    position: relative;
+    left: 5%;
+    width: 70%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #dadada;
+    overflow: hidden;
+    margin-bottom: 30px; /* Espaçamento entre os accordions */
+}
+#yellow-box div span:nth-child(2) {
+    font-size: 18px;
+}
+#yellow-box div span:nth-child(1) {
+    font-weight: bold;
+}
+
+#yellow-box div:nth-child(3) {
+    font-size: 24px;
+    color: #4b4b4b;
+    font-weight: bold;
+    width: 50px;
+}
+#yellow-box div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #e6e6e6;
+    background: rgb(206,255,0);
+    background: linear-gradient(49deg, rgba(206,255,0,1) 0%, rgba(255,239,0,1) 47%, rgba(182,176,43,1) 100%);
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.767);
+}
+
+#yellow-box div:nth-child(2) {
+    flex: 1;
+    padding: 0 15px;
+    font-size: 18px;
+    color: #696969;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+    white-space: nowrap;
+
+}
+#yellow-box div span {
+    flex: 1;
+    padding: 0 15px;
+    font-size: 24px;
+    color: transparent;
+    background: rgb(50,50,50);    
+    background: linear-gradient(138deg, rgba(50,50,50,1) 0%, rgb(224, 224, 9) 37%, rgba(88,88,88,1) 100%);
+    background-clip: text;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* -----CONFIG neutra----- */
+
+#neutra {
+    position: relative;
+    left: 5%;
+    width: 70%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #dadada;
+    overflow: hidden;
+    margin-bottom: 30px; /* Espaçamento entre os accordions */
+}
+#neutra-box div span:nth-child(2) {
+    font-size: 18px;
+}
+#neutra-box div span:nth-child(1) {
+    font-weight: bold;
+}
+
+#neutra-box div:nth-child(3) {
+    font-size: 24px;
+    color: #4b4b4b;
+    font-weight: bold;
+    width: 50px;
+}
+#neutra-box div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    background: rgb(255, 255, 255);
+    background: rgb(255,255,255);
+    background: linear-gradient(209deg, rgba(255,255,255,1) 0%, rgba(255,223,182,1) 47%, rgba(172,172,172,1) 100%);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.767);
+}
+
+#neutra-box div:nth-child(2) {
+    flex: 1;
+    padding: 0 15px;
+    font-size: 18px;
+    color: #696969;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+    white-space: nowrap;
+
+}
+#neutra-box div span {
+    flex: 1;
+    padding: 0 15px;
+    font-size: 24px;
+    color: transparent;
+    background: rgb(31,31,31);
+    background: linear-gradient(49deg, rgba(31,31,31,1) 0%, rgba(255,223,182,1) 47%, rgba(88,88,88,1) 100%);
+    background-clip: text;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#completation{
+    width: 100%;
+    height: 30vh;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
     
+/* -----CONFIG sextheen----- */
+#sixtheen {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 4;
+}
+#sixtheen::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+    z-index: 1;
+}
+#sixtheen::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    z-index: 1;
+}
+
+/* -----CONFIG SEVENTEENTH ----- */
+
+#seventeen {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+
+
 /* -----MEDIA QUIERIES----- */
 @media (max-width: 1400px) {
     #introduction-2 p {
@@ -1473,6 +1905,14 @@ main {
         font-size: 18px;
         
     }
+    #part-text-2 p:nth-child(1){
+        font-size: 30px;
+    }
+    #part-text-2 p:nth-child(2){
+        font-size: 18px;
+        
+    }
+
 }
 @media (max-width: 750px) {
     #second {
@@ -1511,9 +1951,138 @@ main {
     #content-part-1 p:nth-child(1){
         font-size: 22px;
     }
+    #azul{
+        width: 90%;
+        border-radius: 10px;
+    }
+    #red{
+        width: 90%;
+        border-radius: 10px;
+    }
+    #yellow{
+        width: 90%;
+        border-radius: 10px;
+    }
+    #neutra{
+        width: 90%;
+        border-radius: 10px;
+    }
+    #green{
+        width: 90%;
+        border-radius: 10px;
+    }
+    .accordion-content p{
+        text-align: justify;
+    }
+    .accordion-btn div span{
+        opacity: 1;
+    }
+    .accordion-btn div span:nth-child(2) {
+        display: none;
+    }
+    .accordion-btn div span:nth-child(1) {
+       font-weight: bold;
+    }
 }
 @media (max-width: 500px) {
+    #fourteenth{
+        height: 35vh;
+    }
+    #centralize-content-5{
+        padding-bottom: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    #azul-box div:nth-child(1){
+        width: 40px;
+        height: 40px;
+    }
+    #red-box div:nth-child(1){
+        width: 40px;
+        height: 40px;
+    }
+    #yellow-box div:nth-child(1){
+        width: 40px;
+        height: 40px;
+    }
+    #neutra-box div:nth-child(1){
+        width: 40px;
+        height: 40px;
+    }
+    #azul-box div span:nth-child(1){
+        font-size: 20px;
+        opacity: 0.8;
+        font-weight: 600;
+    }
+    #red-box div span:nth-child(1){
+        font-size: 20px;
+        opacity: 0.8;
+        font-weight: 600;
+    }
+    #yellow-box div span:nth-child(1){
+        font-size: 20px;
+        opacity: 0.8;
+        font-weight: 600;
+    }
+    #neutra-box div span:nth-child(1){
+        font-size: 20px;
+        opacity: 0.8;
+        font-weight: 600;
+    }
+    #azul-box div:nth-child(3){
+        width: 40px;
+        color: #777777;
+    }
+    #yellow-box div:nth-child(3){
+        width: 40px;
+        color: #777777;
+    }
+    #neutra-box div:nth-child(3){
+        width: 40px;
+        color: #777777;
+    }
+    #red-box div:nth-child(3){
+        width: 40px;
+        color: #777777;
+    }
+    #green-box div:nth-child(3){
+        width: 40px;
+        color: #777777;
+        
+    }
+    #green-box div span:nth-child(1){
+        font-size: 20px;
+        opacity: 0.8;
+        font-weight: 600;
+    }
+    #green-box div:nth-child(1){
+        width: 40px;
+        height: 40px;
+    }
+    #yellow{
+        left: 0%;
+        padding: 10px;
+    }
+    #neutra{
+        left: 0%;
+        padding: 10px;
+    }
+    #azul{
+        left: 0%;
+        padding: 10px;
+    }
+    #red{
+        left: 0%;
+        padding: 10px;
+    }
+    #green{
+        left: 0%;
+        padding: 10px;
+    }
     #part-text-1{
+        left: 5%;
+    }
+    #part-text-2{
         left: 5%;
     }
     #fifth p{
@@ -1686,6 +2255,9 @@ main {
     #centralize-content-4{
         width: 90%;
     }
+    #centralize-content-5{
+        width: 90%;
+    }
     #slide-test-1{
         width: 85%;
     }
@@ -1693,6 +2265,9 @@ main {
         width: 85%;
     }
     #part-text-1{
+        width: 90%;
+    }
+    #part-text-2{
         width: 90%;
     }
     #credits{
@@ -1705,10 +2280,21 @@ main {
         font-weight: 600;
 
     }
+    #part-text-2 p:nth-child(1){
+        margin-top: 30px;
+        font-size: 22px;
+        font-weight: 600;
+
+    }
     #part-1-2 p{
         font-size: 32px;
     }
     #part-text-1 p:nth-child(2){
+        font-size: 16px;
+        color:transparent;
+        text-align: justify;
+    }
+    #part-text-2 p:nth-child(2){
         font-size: 16px;
         color:transparent;
         text-align: justify;
@@ -1890,7 +2476,14 @@ main {
     #part-text-1 p:nth-child(2){
         font-size: 13px;
     }
+    #part-text-2 p:nth-child(2){
+        font-size: 13px;
+    }
     #part-text-1 p:nth-child(1){
+        font-size: 18px;
+        margin-top: 60px;
+    }
+    #part-text-2 p:nth-child(1){
         font-size: 18px;
         margin-top: 60px;
     }

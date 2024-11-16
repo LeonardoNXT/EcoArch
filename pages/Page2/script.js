@@ -37,7 +37,7 @@ elements.forEach(el => myObserver.observe(el))
 
 const myObserver1 = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        const menu = document.querySelector('.menu'); // Seleciona o elemento com a classe 'menu'
+        const menu = document.querySelector('.menu');
         
         if (entry.isIntersecting == false) {
             menu.classList.add('active')
@@ -48,10 +48,8 @@ const myObserver1 = new IntersectionObserver(entries => {
     });
 });
 
-// Seleciona o elemento pelo `id` que você quer observar
 const elementoParaObservar = document.getElementById('texto');
 
-// Verifica se o elemento existe e então começa a observar
 if (elementoParaObservar) {
     myObserver1.observe(elementoParaObservar);
 }
@@ -78,10 +76,8 @@ const myObserver2 = new IntersectionObserver(entries => {
     });
 });
 
-// Seleciona o elemento pelo `id` que você quer observar
 const elementoParaObservar1 = document.querySelector('.overlay');
 
-// Verifica se o elemento existe e então começa a observar
 if (elementoParaObservar1) {
     myObserver2.observe(elementoParaObservar1);
 }
@@ -100,10 +96,8 @@ const myObserver3 = new IntersectionObserver(entries => {
     });
 });
 
-// Seleciona o elemento pelo `id` que você quer observar
 const elementoParaObservar2 = document.querySelector('.overlay-config-2');
 
-// Verifica se o elemento existe e então começa a observar
 if (elementoParaObservar2) {
     myObserver3.observe(elementoParaObservar2);
 }
@@ -177,10 +171,8 @@ function openModal() {
         });
     });
     
-    // Seleciona o elemento pelo `id` que você quer observar
     const elementoParaObservar2 = document.querySelector('#overlay-config-2');
     
-    // Verifica se o elemento existe e então começa a observar
     if (elementoParaObservar2) {
         myObserver3.observe(elementoParaObservar2);
     }
@@ -195,10 +187,8 @@ function openModal() {
         });
     });
     
-    // Seleciona o elemento pelo `id` que você quer observar
     const elementoParaObservar3 = document.querySelector('#part-2');
     
-    // Verifica se o elemento existe e então começa a observar
     if (elementoParaObservar3) {
         myObserver4.observe(elementoParaObservar3);
     }
@@ -210,6 +200,11 @@ function openModal1() {
     const janela2 = document.querySelector('#eleventh')
     const janela3 = document.querySelector('#twelfth')
     const targetDiv = document.querySelector('#part-1-2');
+    const janela4 = document.querySelector('#thirteenth')
+    const janela5 = document.querySelector('#fourteenth')
+    const janela6 = document.querySelector('#fifthteen')
+    const janela7 = document.querySelector('#sixtheen')
+    const janela8 = document.querySelector('#seventeen')
 
     janela1.style.display = 'flex'
     janela1.style.animation = 'opacity 1s ease-in-out'
@@ -220,6 +215,22 @@ function openModal1() {
 
     janela3.style.display = 'flex'
     janela3.style.opacity = '1'
+
+    janela4.style.display = 'flex'
+    janela4.style.opacity = '1'
+
+    janela5.style.display = 'flex'
+    janela5.style.opacity = '1'
+
+    janela6.style.display = 'flex'
+    janela6.style.opacity = '1'
+
+    janela7.style.display = 'flex'
+    janela7.style.opacity = '1'
+
+    janela8.style.display = 'flex'
+    janela8.style.opacity = '1'
+
     
 
 
@@ -242,10 +253,8 @@ function openModal1() {
         });
     });
     
-    // Seleciona o elemento pelo `id` que você quer observar
     const elementoParaObservar3 = document.querySelector('.overlay-config-3');
     
-    // Verifica se o elemento existe e então começa a observar
     if (elementoParaObservar3) {
         myObserver4.observe(elementoParaObservar3);
     }
@@ -264,10 +273,8 @@ function openModal1() {
         });
     });
     
-    // Seleciona o elemento pelo `id` que você quer observar
     const elementoParaObservar4 = document.querySelector('#part-1-2');
     
-    // Verifica se o elemento existe e então começa a observar
     if (elementoParaObservar4) {
         myObserver5.observe(elementoParaObservar4);
     }
@@ -276,3 +283,15 @@ function openModal1() {
         targetDiv.scrollIntoView({ behavior: 'smooth' });
     }
 }
+
+document.querySelectorAll(".accordion-btn").forEach(button => {
+    button.addEventListener("click", () => {
+        const content = button.nextElementSibling;
+
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+});
