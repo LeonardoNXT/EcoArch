@@ -1,14 +1,12 @@
 // Carregamento da página
 
-let load = document.querySelector('.loading');
-if (load) {
-  window.addEventListener('load', async () => {
-    load.classList.add('loadingfinish');
-    setTimeout(() => {
-      load.remove();
-    }, 1000);
-  });
-}
+document.addEventListener("DOMContentLoaded", () => {
+    const load = document.querySelector(".loading");
+    if (load) {
+        load.classList.add("loadingfinish");
+        setTimeout(() => load.remove(), 1000);
+    }
+});
 
 
 
