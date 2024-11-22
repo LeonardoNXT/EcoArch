@@ -1,13 +1,15 @@
 // Carregamento da página
 
-let load = document.querySelector('.loading')
-window.addEventListener('load', async () => {
+let load = document.querySelector('.loading');
+if (load) {
+  window.addEventListener('load', async () => {
+    load.classList.add('loadingfinish');
+    setTimeout(() => {
+      load.remove();
+    }, 1000);
+  });
+}
 
-  load.classList.add('loadingfinish')
-  setTimeout(() => {
-      load.remove()
-  },1000)
-})
 
 
 
@@ -128,7 +130,7 @@ function openModal() {
 
     janela1.style.display = 'flex'
     janela1.style.opacity = '1'
-    janela1.style.animation = 'opacity 1s ease-in-out'
+    janela1.style.animation = 'opacity1 1s ease-in-out'
 
     janela2.style.display = 'flex'
     janela2.style.opacity = '1'
@@ -205,10 +207,19 @@ function openModal1() {
     const janela6 = document.querySelector('#fifthteen')
     const janela7 = document.querySelector('#sixtheen')
     const janela8 = document.querySelector('#seventeen')
+    const janela9 = document.querySelector('#nineteen')
+    const janela10 = document.querySelector('#nineteen-2')
+    const video = document.querySelector('#video-7')
+    const video1 = document.querySelector('#video-3')
+    const line = document.querySelector('.marquee')
+    const part = document.querySelector('#part-1-2')
+
+    const janela11 = document.querySelector('#nineteen')
 
     janela1.style.display = 'flex'
-    janela1.style.animation = 'opacity 1s ease-in-out'
+    part.style.animation = 'opacity 1s ease-in-out'
     janela1.style.opacity = '1'
+    janela1.style.animation = 'opacity1 1s ease-in-out'
 
     janela2.style.display = 'flex'
     janela2.style.opacity = '1'
@@ -231,6 +242,17 @@ function openModal1() {
     janela8.style.display = 'flex'
     janela8.style.opacity = '1'
 
+    janela9.style.display = 'none'
+    janela9.style.opacity = '1'
+
+    janela10.style.display = 'flex'
+    janela10.style.opacity = '1'
+
+    janela11.remove()
+
+    line.style.display = 'block'
+
+    video.src="./css/video/[4K] Palm Tree Loop - Glowing Tubes - SICK Visuals.mp4"
     
 
 
@@ -295,3 +317,40 @@ document.querySelectorAll(".accordion-btn").forEach(button => {
         }
     });
 });
+function openModal2() {
+    const janela1 = document.querySelector('#twenty')
+    const janela2 = document.querySelector('#twenty-one')
+    const targetDiv = document.querySelector('#twenty');
+    const video = document.querySelector('#video-7')
+
+    janela1.style.display = 'flex'
+    janela1.style.animation = 'opacity 1s ease-in-out'
+    janela1.style.opacity = '1'
+    janela2.style.display = 'flex'
+    janela2.style.opacity = '1'
+
+    video.style.opacity = '1'
+
+    if(targetDiv) {
+        targetDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
