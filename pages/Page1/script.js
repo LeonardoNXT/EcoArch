@@ -169,18 +169,3 @@ document.addEventListener('DOMContentLoaded', function() {
     },1000)
 })
 
-
-function openModal5() {
-    const janela1 = document.querySelector('#twenty')
-    const janela2 = document.querySelector('#twenty-one')
-    const targetDiv = document.querySelector('#part-2');
-
-    janela1.style.display = 'flex'
-    janela1.style.opacity = '1'
-    janela2.style.display = 'flex'
-    janela2.style.opacity = '1'
-
-    if(targetDiv) {
-        targetDiv.scrollIntoView({ behavior: 'smooth' });
-    }
-}

@@ -1919,7 +1919,7 @@ main {
 }
 #sixtheen-1 {
     width: 100%;
-    height: 100vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1946,7 +1946,7 @@ main {
     width: 100%;
     height: 400px;
     background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
     z-index: 1;
 }
 #sixtheen-1::after {
@@ -2136,7 +2136,7 @@ main {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 23%;
+    top: 22%;
     right: 3%;
 }
 
@@ -2206,6 +2206,7 @@ main {
 #divtest3{
     width: 100%;
     height: 100vh;
+    background: rgb(0,0,0);
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%);
     backdrop-filter: blur(25px);
@@ -2638,12 +2639,23 @@ main {
 }
 
 
+
+
 /* ----- Final Section----- */
-#sec-end {
+
+#divtest4{
     width: 100%;
-    height: 50vh;
-    overflow: hidden;
-    background-color: #fff;
+    height: 20vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#divtest4 p{
+    color: transparent;
+    background: linear-gradient(49deg, rgba(249,241,186,1) 0%, rgba(40,153,156,1) 100%);
+    background-clip: text;
+    font-size: 20px;
 }
 
 /* -----MEDIA QUIERIES----- */
@@ -3042,6 +3054,9 @@ main {
         width: 90%;
         border-radius: 10px;
     }
+    #divtest4 p{
+        font-size: 14px;
+    }
 
     #green {
         width: 90%;
@@ -3077,15 +3092,23 @@ main {
     #inside-wind-2{
         width: 90%;
     }
+    #divtest3{
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%);
+    }
+    #final-div{
+       display: none;
+    }
     #ins-divtest2{
         width: 80%;
         height: 80%;
-        border: 1px solid white;
+        
     }
     #ins-divtest3{
         width: 80%;
         height: 80%;
-        border: 1px solid white;
+        border-top: 0px solid #000;
+        border-bottom: 1px solid rgb(255, 255, 255);
     }
     #divtest2{
         height: 45vh;
@@ -3096,10 +3119,13 @@ main {
     #part-1-divtest div p:nth-child(1) {
         font-size: 22px;
         text-align: center;
+        background: linear-gradient(124deg, rgba(209, 209, 209, 1) 0%, rgba(196, 188, 126, 1) 48%, rgba(126, 100, 55, 1) 100%);
+        background-clip: text;
     }
     #part-1-divtest div p:nth-child(2) {
-        font-size: 16px;
+        font-size: 14px;
         margin-top: 30px;
+
     }
     #line27{
         left: 5%;
@@ -3171,7 +3197,7 @@ main {
     }
 
     #line-test-2 {
-        top: 25%;
+        top: 21%;
     }
 
     #texto-23 {
