@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 
-function openModal2() {
+function openModal5() {
     const janela1 = document.querySelector('#twenty')
     const janela2 = document.querySelector('#twenty-one')
     const targetDiv = document.querySelector('#part-2');

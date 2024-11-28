@@ -8,9 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-
-
-
 // Animação dos elementos
 
 
@@ -126,6 +123,8 @@ function openModal() {
     const janela9 = document.querySelector('#seventh-2')
     const targetDiv = document.querySelector('#part-1');
 
+
+
     janela1.style.display = 'flex'
     janela1.style.opacity = '1'
     janela1.style.animation = 'opacity1 1s ease-in-out'
@@ -146,7 +145,9 @@ function openModal() {
     janela8.style.opacity = '1'
     janela9.style.display = 'flex'
     janela9.style.opacity = '1'
+    
 
+    
 
     if (targetDiv) {
         targetDiv.scrollIntoView({ behavior: 'smooth' });
@@ -335,7 +336,71 @@ function openModal2() {
 }
 
 
+function clickBol1(){
+    const window1 = document.querySelector(".windows-1")
+    window1.style.animation = "opacity2 0.5s ease-in-out"
+    setTimeout(() => {
+        window1.classList.remove("activeW")  
+    },500)
 
+    
+}
+
+function openWind1() {
+    const window1 = document.querySelector(".windows-1")
+    window1.style.animation = ""
+    window1.classList.add("activeW")
+    window1.style.opacity = "1"
+}
+function clickBol2(){
+    const window1 = document.querySelector(".windows-2")
+    window1.style.animation = "opacity2 0.5s ease-in-out"
+    setTimeout(() => {
+        window1.classList.remove("activeW")  
+    },500)
+
+    
+}
+
+function openWind2() {
+    const window1 = document.querySelector(".windows-2")
+    window1.style.animation = ""
+    window1.classList.add("activeW")
+    window1.style.opacity = "1"
+}
+function clickBol3(){
+    const window1 = document.querySelector(".windows-3")
+    window1.style.animation = "opacity2 0.5s ease-in-out"
+    setTimeout(() => {
+        window1.classList.remove("activeW")  
+    },500)
+
+    
+}
+
+function openWind3() {
+    const window1 = document.querySelector(".windows-3")
+    window1.style.animation = ""
+    window1.classList.add("activeW")
+    window1.style.opacity = "1"
+}
+
+function openWind4() {
+    const window1 = document.querySelector(".windows-4")
+    window1.style.animation = ""
+    window1.classList.add("activeW")
+    window1.style.opacity = "1"
+}
+
+function clickBol4(){
+    const window1 = document.querySelector(".windows-4")
+    window1.style.animation = "opacity2 0.5s ease-in-out"
+    setTimeout(() => {
+        window1.classList.remove("activeW")  
+    },500)
+
+    
+}
 
 
 
