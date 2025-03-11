@@ -1,46 +1,90 @@
-# EcoArch 🌿
+# EcoArch - Tecnologia, Inovação e Sustentabilidade
 
-**EcoArch** é uma empresa dedicada ao desenvolvimento sustentável, com foco em soluções inovadoras para mitigar os impactos ambientais, utilizando tecnologias verdes e materiais ecoeficientes em projetos de construção civil.
+Bem-vindo ao repositório do **EcoArch**, um projeto desenvolvido para uma apresentação que destaca as características sustentáveis da empresa, com foco em **Conforto Inteligente** e **Edifícios Sustentáveis**. Este projeto foi criado entre outubro e novembro de 2024 e consiste em uma landing page moderna e interativa, dividida em três páginas principais.
 
-## 🚀 Visão
-Nosso objetivo é transformar o setor de construção por meio de práticas sustentáveis, promovendo edificações inteligentes e energeticamente eficientes que respeitem o meio ambiente e proporcionem conforto e bem-estar para todos.
+## 🚀 Visão Geral
 
-## 🌱 Missão
-Contribuir ativamente para o combate às mudanças climáticas, desenvolvendo soluções arquitetônicas inovadoras que otimizam recursos naturais e reduzem as emissões de gases de efeito estufa.
+O **EcoArch** é uma empresa fictícia de tecnologia e inovação que busca integrar sustentabilidade, conforto e eficiência em suas soluções. Este projeto foi desenvolvido como uma landing page de apresentação, com o objetivo de mostrar como a tecnologia pode ser aliada à sustentabilidade para criar ambientes inteligentes e ecologicamente responsáveis.
 
-## 💡 Nossas Soluções
+### Características Destacadas:
 
-### Combate às Mudanças Climáticas
-Através de práticas sustentáveis, ajudamos a reduzir emissões de gases de efeito estufa, mitigando o impacto do aquecimento global e prevenindo eventos climáticos extremos.
+- **Conforto Inteligente**: Soluções tecnológicas que promovem bem-estar e eficiência energética.
+- **Edifícios Sustentáveis**: Projetos arquitetônicos que priorizam o uso de materiais ecológicos e a redução de impactos ambientais.
 
-### Inovação e Eficiência
-Investimos em tecnologias verdes e materiais ecoeficientes para otimizar recursos, melhorar a eficiência energética e desenvolver soluções de construção que aliam inovação e sustentabilidade.
+## ✨ Funcionalidades
 
-### Edifícios Inteligentes
-Desenvolvemos edifícios que utilizam tecnologia de ponta para otimizar o consumo de energia, garantir a sustentabilidade e promover o bem-estar dos ocupantes.
+- **Design Moderno e Responsivo**: Páginas adaptáveis a diferentes dispositivos (desktop, tablet, mobile).
+- **Navegação Intuitiva**: Links entre as páginas para uma experiência fluida.
+- **Conteúdo Interativo**: Uso de imagens, vídeos e textos para engajar o usuário.
+- **Foco em Sustentabilidade**: Destaque para as práticas e tecnologias sustentáveis da EcoArch.
 
-### Conforto e Bem-estar
-Acreditamos que sustentabilidade e conforto podem andar juntos. Nossos projetos são pensados para oferecer ambientes confortáveis e saudáveis, com foco no bem-estar das pessoas.
+## 🛠️ Tecnologias Utilizadas
 
-### Energia e Cálculos Sustentáveis
-Trabalhamos com sistemas de energia renovável e realizamos cálculos precisos para garantir a máxima eficiência no uso de recursos energéticos.
+- **HTML5**: Estruturação do conteúdo das páginas.
+- **CSS3**: Estilização e design responsivo.
+- **JavaScript**: Interatividade e dinamismo.
+- **Imagens e Vídeos**: Para ilustrar as características sustentáveis da empresa.
 
-## 👥 Equipe
-Nossa equipe é composta por profissionais qualificados e apaixonados por inovação, tecnologia e sustentabilidade, comprometidos em entregar soluções que fazem a diferença para o planeta e para as pessoas.
+## 📁 Estrutura do Projeto
 
-## 🏗️ Tecnologias Utilizadas
-- **HTML5**: Estrutura do site
-- **CSS3**: Estilos e layout
-- **JavaScript**: Funcionalidades e interatividade
-- **Tecnologias verdes e ecoeficientes** aplicadas nas construções
+```
+/EcoArch-Main
+│
+├── /css
+│   └── /img
+│
+├── /pages
+│   ├── /Page1
+│   │   ├── /CSS
+│   │   │   ├── styles.css
+│   │   │   ├── /Img
+│   │   │   └── /Video
+│   │   ├── index.html
+│   │   └── script.js
+│   │
+│   └── /Page2
+│       ├── /css
+│       │   ├── styles.css
+│       │   ├── /img
+│       │   └── /video
+│       ├── index.html
+│       └── script.js
+│
+├── index.html
+├── script.js
+└── README.md
+```
 
-## 📈 Impacto
-Cada projeto da EcoArch tem como objetivo reduzir significativamente o impacto ambiental das construções, promovendo o uso racional de energia, água e materiais, e contribuindo para um futuro mais sustentável.
+### Páginas do Projeto:
 
-## 🌍 Compromisso
-A EcoArch é totalmente comprometida com a preservação do meio ambiente. Cada decisão, desde o planejamento até a execução dos projetos, é feita com o objetivo de respeitar e proteger os recursos naturais.
+1. **Página Principal (`index.html`)**: Apresentação geral da EcoArch, com links para as páginas de **Conforto Inteligente** e **Edifícios Sustentáveis**.
+2. **Página 1 (`Page1/index.html`)**: Destaque para as soluções de **Conforto Inteligente**, com imagens, vídeos e textos explicativos.
+3. **Página 2 (`Page2/index.html`)**: Foco em **Edifícios Sustentáveis**, mostrando projetos e tecnologias que reduzem o impacto ambiental.
+
+## 🌐 Como Visualizar
+
+Você pode acessar o projeto online através do link de deploy:  
+🔗 **[Acessar Deploy](https://ecoarch.netlify.app/)**
+
+Ou, se preferir, clone o repositório e abra o arquivo `index.html` no seu navegador:
+
+```bash
+git clone https://github.com/seu-usuario/EcoArch-Main.git
+cd EcoArch-Main
+```
+
+Ou acesse o link do deploy (se disponível).
+
+## 🎯 Objetivos do Projeto
+
+- **Apresentação Visual**: Criar uma landing page atraente e informativa para destacar as características sustentáveis da EcoArch.
+- **Conscientização**: Mostrar como a tecnologia pode ser usada para promover sustentabilidade e conforto.
+- **Experiência do Usuário**: Proporcionar uma navegação fluida e interativa.
 
 ---
 
-> **EcoArch: Construindo um futuro sustentável, um edifício de cada vez.**
+![Deploy](./css/img/Ecoarch.png)
 
+---
+
+Feito com 💜 por [Leonardo Leal](https://github.com/LeonardoNXT)
