@@ -87,6 +87,7 @@ function openTheLine() {
     const slide1 = document.querySelector("#seventh-slide")
     const slide2 = document.querySelector("#eighth-slide")
     const slide3 = document.querySelector("#ninth-slide")
+    const targetDiv = document.querySelector('#video-box');
     slide1.style.display = "flex"
     slide1.style.animation = "modal1 0.5s"
 
@@ -95,6 +96,11 @@ function openTheLine() {
 
     slide3.style.borderTopRightRadius = "0px"
     slide3.style.borderTopLeftRadius = "0px"
+
+
+    if (targetDiv) {
+        targetDiv.scrollIntoView({ behavior: 'smooth' });
+    }
     
 }
 function openSennaTower() {
@@ -106,6 +112,7 @@ function openSennaTower() {
     const slide9 = document.querySelector("#after-last-slide")
     const slide10 = document.querySelector("#last-slide")
     const video = document.querySelector("#video-2")
+    const targetDiv = document.querySelector('#config-video-svg');
     exitSennaTower()
     slide5.style.display = "flex"
     slide4.style.display = "block"
@@ -115,6 +122,10 @@ function openSennaTower() {
     slide9.style.display = "flex"
     video.style.animation = "modal1 0.5s"
     slide10.style.display = "none"
+
+    if (targetDiv) {
+        targetDiv.scrollIntoView({ behavior: 'smooth' });
+    }
 
     
 }
@@ -157,3 +168,4 @@ document.addEventListener('DOMContentLoaded', function() {
         load.remove()
     },1000)
 })
+
